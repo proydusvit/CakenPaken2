@@ -1,14 +1,14 @@
 import styles from '../Header.module.scss';
 import Link from 'next/link';
 
-const SupportBtn = ({ support, donate }) => {
+const SupportBtn = ({ support, donate, isClicked }) => {
   return (
     <div className={styles.donate_link}>
-      <Link href="/support" className={styles.support}>
+      <Link href="/support" onClick={isClicked} className={styles.support}>
         {support}
       </Link>
 
-      <Link href="/donate" className={styles.donate}>
+      <Link href="/donate" onClick={isClicked} className={styles.donate}>
         {donate}
       </Link>
     </div>

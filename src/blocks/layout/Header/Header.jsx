@@ -53,10 +53,14 @@ const Header = ({
         <ButtonHeader handleClick={handleClick} isClicked={isClicked} />
 
         <div className={`${styles.content} ${isClicked ? styles.visible : ''}`}>
-          <SupportBtn support={support} donate={donate} />
+          <SupportBtn
+            isClicked={handleClick}
+            support={support}
+            donate={donate}
+          />
 
           <Navigation
-            isClicked={isClicked}
+            isClicked={handleClick}
             pathname={pathname}
             projects={projects}
             shop={shop}

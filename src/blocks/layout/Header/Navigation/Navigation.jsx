@@ -20,7 +20,7 @@ const Navigation = ({
             className={`${styles.link} ${
               pathname === '/projects' ? styles.active : ''
             }`}
-            onClick={() => isClicked(false)}
+            onClick={isClicked}
           >
             {projects}
           </Link>
@@ -37,7 +37,7 @@ const Navigation = ({
             className={`${styles.link} ${
               pathname === '/about' ? styles.active : ''
             }`}
-            onClick={() => isClicked(false)}
+            onClick={isClicked}
           >
             {about}
           </Link>
@@ -48,7 +48,7 @@ const Navigation = ({
             className={`${styles.link} ${
               pathname === '/team' ? styles.active : ''
             }`}
-            onClick={() => isClicked(false)}
+            onClick={isClicked}
           >
             {crew}
           </Link>
@@ -60,7 +60,7 @@ const Navigation = ({
             className={`${styles.link} ${
               pathname === '/gallery' ? styles.active : ''
             }`}
-            onClick={() => isClicked(false)}
+            onClick={isClicked}
           >
             {gallery}
           </Link>
