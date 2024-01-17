@@ -38,7 +38,7 @@ const Header = ({
     ].includes(pathname);
 
     const newBackgroundColor =
-      isWhiteBackgroundRoute && isMobile ? 'white' : 'black';
+      isWhiteBackgroundRoute && isMobile ? 'black' : 'white';
 
     setBackgroundColor(newBackgroundColor);
   }, [pathname, isMobile]);
