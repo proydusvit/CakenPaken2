@@ -2,6 +2,7 @@ import styles from '../Header.module.scss';
 import Link from 'next/link';
 
 const Navigation = ({
+  isClicked,
   pathname,
   projects,
   shop,
@@ -19,6 +20,7 @@ const Navigation = ({
             className={`${styles.link} ${
               pathname === '/projects' ? styles.active : ''
             }`}
+            onClick={() => isClicked(false)}
           >
             {projects}
           </Link>
@@ -35,6 +37,7 @@ const Navigation = ({
             className={`${styles.link} ${
               pathname === '/about' ? styles.active : ''
             }`}
+            onClick={() => isClicked(false)}
           >
             {about}
           </Link>
@@ -45,6 +48,7 @@ const Navigation = ({
             className={`${styles.link} ${
               pathname === '/team' ? styles.active : ''
             }`}
+            onClick={() => isClicked(false)}
           >
             {crew}
           </Link>
@@ -56,6 +60,7 @@ const Navigation = ({
             className={`${styles.link} ${
               pathname === '/gallery' ? styles.active : ''
             }`}
+            onClick={() => isClicked(false)}
           >
             {gallery}
           </Link>

@@ -56,6 +56,7 @@ const Header = ({
           <SupportBtn support={support} donate={donate} />
 
           <Navigation
+            isClicked={isClicked}
             pathname={pathname}
             projects={projects}
             shop={shop}
