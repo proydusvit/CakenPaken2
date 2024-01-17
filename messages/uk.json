@@ -1,0 +1,83 @@
+{
+  "Home": {
+    "merch": "Мерч",
+    "crew": "Команда",
+    "projects": "Проєкти",
+    "gallery": "Галерея",
+    "about": "Про нас",
+    "sponsors": "Спонсори",
+    "donateU": "Підтримайте Україну",
+    "donate": "Задонатити",
+    "support": "Підтримати Україну"
+  },
+  "About": {
+    "about": "Про нас",
+    "caken": "Цакен-пакен! Звучить як заклик",
+    "weare": "Ми - спільнота українців, яким не байдужа культура власного народу та створення потужних, якісних, цільових продуктів на розвиток об’єднання, культури та поширення українського бренду, – те чого ми зараз потребуємо у великих масштабах, попри все.",
+    "team": "Команда",
+    "yes": "Так! Це пропаганда альтернативного відпочинку, екстремального спорту та привʼязка свідомих цінностей.",
+    "no": "Ні! Це не про ідеальну картинку життя.",
+    "style": "Це про стиль, відданість, запах свободи, відчайдушність і шалені дії нескорених. Ми не просто створюємо фільм - ми допомагаємо відкрити двері в світ, де неможливість - це лише слово у словнику.\n Обіцяємо, твій внутрішній вогник розпалиться, а бажання творити та боротись з почуттям страху – однозначно, підвищиться.\n Залишайся з нами, аби творити велике РАЗОМ!"
+  },
+  "Common": {
+    "donate": "Підтримай Команду",
+    "support": "Задонатити",
+    "events": "Події",
+    "about": "Про нас",
+    "shop": "Магазин",
+    "crew": "Команда",
+    "projects": "Проєкти",
+    "gallery": "Галерея",
+    "design": "Дизайнер - Катерина Цимбрівська",
+    "develop": "Розробляв - Владислав Шеставецький"
+  },
+  "Gallery": {
+    "home": "Головна",
+    "gallery": "Галерея",
+    "film": "Гірська Мить",
+    "team": "Команда",
+    "trail": "Завтра не пожалієш"
+  },
+  "Projects": {
+    "home": "Головна",
+    "projects": "Проєкти",
+    "film": "Гірська Мить",
+    "trail": "Завтра не пожалієш",
+    "textF": "Побачити світ очима нашої команди – означає повне занурення у сильні емоції, пристрасть до екстриму, який пробуджує палкий животворний вогонь та  дає справжнє відчуття: \"Вільний, а значить – живий!\"\nНасичена добірка кадрів перенесе вас у засніжені схили гір і зробить частиною великої пригоди, надасть незабутні враження та надихне на нові досягнення.\nАдже ми вважаємо, що саме \"зараз\" – найкращий час, аби творити важливі речі, від яких ви отримаєте електричний заряд.",
+    "conception": "Концепція",
+    "title": "Тож, що саме підштовхнуло відчайдух дослідити українські та внутрішні горизонти - дізнаєшся у нашому документальному фільмі *назва фільму*\nРозкрий в собі дух справжнього життя на межі  разом з CAKEN PAKEN!",
+    "textT": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. Et sociis quam laoreet penatibus facilisi accumsan id at nulla. Iaculis tristique at ut turpis nibh.",
+    "titleT": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. Et sociis quam laoreet penatibus facilisi accumsan id at nulla. Iaculis tristique at ut turpis nibh."
+  },
+  "Support": {
+    "title": "Підтримка України у війні проти Росії",
+    "donation": "Донати",
+    "circle": "Олімпійське коло",
+    "text": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. ",
+    "donate": "Задонатити",
+    "textFund": "Благодійний фонд «Олімпійське коло» офіційно заснований 25 травня 2022 року. Організація, створена спортсменами для допомоги Миколаєвщині у боротьбі з російськими окупантами. Ми розпочали свою роботу як волонтери з перших днів, а потім вирішили об’єднати зусилля в «Олімпійське коло», тому що ми як спортсмени розуміємо, що тільки командна робота буде успішною.",
+    "supportcaken": "підтримай CakenPaken",
+    "suppotteam": "Підтримай команду",
+    "patreon": "Патреон",
+    "textdonat": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. ",
+    "textPatreon": "Есклюзивний контент",
+    "textPatreon1": "Базова підтримка"
+  },
+  "Team": {
+    "team": "Команда",
+    "joined": "Люди, які приєдналися до Cakenpaken",
+    "Sopot": "Назар Сопотницький",
+    "Chycha": "Олексій Чичкан",
+    "Stas": "Стас Кондалев",
+    "Natali": "Наталі Сазонова",
+    "Meloy": "Паша Мелой",
+    "Yavych": "Андрій Явич",
+    "Savchuk": "Діма Савчук",
+    "Kolisnyk": "Назар Колісник",
+    "Arsen": "Арсен Волосянко",
+    "Bombar": "Олександр Бобмар",
+    "Diana": "Діана Панченко",
+    "Kate": "Катерина Цимбрівська",
+    "Vlad": "Влад Шеставецький"
+  }
+}

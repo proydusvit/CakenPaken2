@@ -1,0 +1,83 @@
+{
+  "Home": {
+    "merch": "Merch",
+    "crew": "Crew",
+    "projects": "Projects",
+    "gallery": "Gallery",
+    "about": "About us",
+    "sponsors": "Sponsors",
+    "donateU": "Support Ukraine",
+    "donate": "Donate",
+    "support": "Support Ukraine"
+  },
+  "About": {
+    "about": "About Us",
+    "caken": "Сaken-paken! Sounds like a call.",
+    "weare": "We are \n a community of Ukrainians who care about the culture of their own people and the creation of powerful, high-quality, targeted products for the development of the association, culture and distribution of the Ukrainian brand - what we now need on a large scale, despite everything.",
+    "team": "Team",
+    "yes": "Yes! This promotes alternative recreation, extreme sports, and tying conscious values.",
+    "no": "No! It's not about the perfect picture of life.",
+    "style": "It's about style, devotion, the smell of freedom, the desperation and furious actions of the unconquered. We don't just create a film - we help open the door to a world where impossibility is just a word in a dictionary.\nWe promise, your inner flame will ignite, and the desire to create and fight with a sense of fear will definitely increase.\n Stay with us to do great things TOGETHER!"
+  },
+  "Common": {
+    "donate": "Support Team",
+    "support": "Donate",
+    "projects": "Projects",
+    "about": "About us",
+    "shop": "Shop",
+    "crew": "Crew",
+    "events": "Events",
+    "gallery": "Gallery",
+    "design": "Design by Kate Tsymbrivska",
+    "develop": "Developed by Vlad Shestavetskyi"
+  },
+  "Gallery": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "film": "Mountain Instant",
+    "team": "Team",
+    "trail": "You won't regret tomorrow"
+  },
+  "Projects": {
+    "home": "Home",
+    "projects": "Projects",
+    "film": "Mountain Instant",
+    "trail": "You won't regret tomorrow",
+    "textF": "To see the world through the eyes of our team means a complete immersion in strong emotions, a passion for extreme sports, which awakens a burning life-giving fire and gives a real feeling: \"Free, and therefore - alive!\"\nA rich selection of frames will take you to the snow-covered slopes of the mountains and make you part of a great adventure, provide unforgettable impressions and inspire new achievements.\nAfter all, we believe that \"now\" is the best time to do important things from which you will receive an electric charge.",
+    "conception": "Conception",
+    "title": "So, what exactly prompted the despair to explore the Ukrainian and internal horizons - you will learn in our documentary * the name of the film *\nReveal the spirit of real life on the verge with CAKEN PAKEN!",
+    "textT": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. Et sociis quam laoreet penatibus facilisi accumsan id at nulla. Iaculis tristique at ut turpis nibh.",
+    "titleT": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. Et sociis quam laoreet penatibus facilisi accumsan id at nulla. Iaculis tristique at ut turpis nibh."
+  },
+  "Support": {
+    "title": "support Ukraine in the war against Russia",
+    "donation": "donation",
+    "circle": "Olympic Circle",
+    "text": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. ",
+    "donate": "Donate",
+    "textFund": "The Olympic Circle Charitable Foundation was officially founded on May 25, 2022. The organization was created by athletes to help the Mykolaiv Oblast in the fight against the Russian invaders. We started our work as volunteers from the first days, and then decided to join forces in the Olympic Circle, because as athletes we understand that only teamwork will be successful.",
+    "supportcaken": "Support CakenPaken",
+    "suppotteam": "Support Team",
+    "patreon": "Patreon",
+    "textdonat": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. ",
+    "textPatreon": "Exclusive content",
+    "textPatreon1": "Basic support"
+  },
+  "Team": {
+    "team": "Crew",
+    "joined": "people who joined the Cakenpaken",
+    "Sopot": "Nazar Sopot",
+    "Chycha": "Oleksiy Chychkan",
+    "Stas": "Stas Kondalev",
+    "Natali": "Natali Sazonova",
+    "Meloy": "Pasha Meloy",
+    "Yavych": "Andriy Yavych",
+    "Savchuk": "Dima Savchuk",
+    "Kolisnyk": "Nazar Kolisnyk",
+    "Arsen": "Arsen Volosianko",
+    "Bombar": "Sasha Bombar",
+    "Diana": "Diana Panchenko",
+    "Kate": "Kate Tsymbrivska",
+    "Vlad": "Vlad Shestavetskyi"
+  }
+}
