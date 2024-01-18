@@ -5,7 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import { useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
 import Header from '@/blocks/layout/Header/Header';
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/blocks/layout/Footer/Footer';
 import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
 
@@ -69,6 +70,8 @@ export default function LocaleLayout({ children, params }) {
         <Support support={t('support')} donate={t('donate')} />
         <main>{children}</main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

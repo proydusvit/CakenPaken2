@@ -12,6 +12,8 @@
   "dependencies": {
     "@react-hook/media-query": "^1.1.1",
     "@svgr/webpack": "^8.1.0",
+    "@vercel/analytics": "^1.1.2",
+    "@vercel/speed-insights": "^1.0.5",
     "lightbox.js-react": "^0.9.9",
     "next": "14.0.4",
     "next-intl": "^3.4.2",
