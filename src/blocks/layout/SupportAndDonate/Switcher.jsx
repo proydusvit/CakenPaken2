@@ -15,7 +15,7 @@ const Switcher = ({ currentLanguage, secondColor, setCurrentLanguage }) => {
           locale="uk"
           onClick={() => setCurrentLanguage('uk')}
         >
-          UK
+          EN
         </Link>
       )}
       {currentLanguage === 'uk' && (
@@ -26,7 +26,7 @@ const Switcher = ({ currentLanguage, secondColor, setCurrentLanguage }) => {
           locale="en"
           onClick={() => setCurrentLanguage('en')}
         >
-          EN
+          UK
         </Link>
       )}
     </div>

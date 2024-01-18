@@ -37,7 +37,7 @@ const Film = () => {
         '@type': 'ListItem',
         position: '3',
         item: {
-          '@id': `cakenpaken/projects/film`,
+          '@id': `cakenpaken/projects/mountain_instant`,
           name: t('film'),
         },
       },
@@ -53,7 +53,7 @@ const Film = () => {
       text: t('projects'),
     },
     {
-      link: '/projects/film',
+      link: '/projects/mountain_instant',
       text: t('film'),
     },
   ];
