@@ -66,7 +66,6 @@ const GalleryTrail = () => {
       </div>
 
       <SectionSecond>
-        {/* <BackLink link={'/gallery'} back={t('gallery')} current={t('trail')} /> */}
         <BreadCrumbs list={breadCrumbsList} />
         <Foto image={listTrail} />
       </SectionSecond>

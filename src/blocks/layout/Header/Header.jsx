@@ -61,7 +61,6 @@ const Header = ({
 
           <Navigation
             isClicked={handleClick}
-            pathname={pathname}
             projects={projects}
             shop={shop}
             events={events}

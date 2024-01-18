@@ -47,9 +47,9 @@ $large-screen: 1239px;
     display: flex;
     opacity: 1;
     justify-content: space-between;
-    &[style*='opacity: 1'] {
-      background-color: white;
-    }
+    // &[style*='opacity: 1'] {
+    //   background-color: white;
+    // }
   }
 }
 
@@ -130,12 +130,12 @@ $large-screen: 1239px;
   }
 
   &:hover,
-  &.active {
-    font-weight: 700;
-  }
   &:focus {
     font-weight: 700;
   }
+}
+.active {
+  font-weight: 700;
 }
 .img {
   animation: shrinkText 2s linear forwards;

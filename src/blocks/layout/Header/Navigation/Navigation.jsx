@@ -1,9 +1,10 @@
 import styles from '../Header.module.scss';
 import Link from 'next/link';
+import { usePathname } from '@/navigation';
 
 const Navigation = ({
   isClicked,
-  pathname,
+
   projects,
   shop,
   events,
@@ -11,6 +12,7 @@ const Navigation = ({
   crew,
   gallery,
 }) => {
+  const pathname = usePathname();
   return (
     <nav>
       <ul className={styles.list}>
