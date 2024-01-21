@@ -16,8 +16,9 @@ $large-screen: 1239px;
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url('../../assets/imgAbout/Image_About.webp');
-  @include backFoto;
+    url('../../assets/imgHome/Card_About.webp');
+  background-size: cover;
+  background-position: 50% 100%;
 
   display: flex;
   justify-content: center;
@@ -54,6 +55,9 @@ $large-screen: 1239px;
 }
 
 .section {
+  // display: flex;
+  // justify-content: center;
+  // text-align: center;
   &__list {
     justify-content: space-between;
     display: flex;
@@ -107,62 +111,32 @@ $large-screen: 1239px;
   }
 }
 
-.team {
-  display: flex;
-  justify-content: flex-start;
+.team__text {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 955px;
+
   margin-bottom: 100px;
-  &__name {
-    font-size: 50px;
-    margin-right: 79px;
-    line-height: 58px;
-    letter-spacing: -2px;
-    text-transform: uppercase;
-
-    @media (min-width: $medium-screen) and (max-width: $large-screen) {
-      font-size: 36px;
-      line-height: 42px;
-      letter-spacing: -1.44px;
-
-      margin-bottom: 20px;
-    }
-    @media (max-width: $small-screen) {
-      font-size: 22px;
-      line-height: 26px;
-      letter-spacing: -0.88px;
-
-      margin-bottom: 10px;
-    }
-    @media (max-width: $small-screen) {
-      margin-top: 90px;
-    }
-  }
-  &__text {
-    width: 955px;
-    height: 68px;
-
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: -1.44px;
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.72px;
-    @media (min-width: $medium-screen) and (max-width: $large-screen) {
-      font-size: 18px;
-
-      width: 100%;
-      height: auto;
-    }
-    @media (max-width: $small-screen) {
-      font-size: 18px;
-
-      width: 100%;
-      height: auto;
-    }
-  }
-  @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    display: block;
+    width: 100%;
+    height: auto;
   }
   @media (max-width: $small-screen) {
-    display: block;
+    font-size: 18px;
+    line-height: 22px; /* 122.222% */
+    letter-spacing: -0.72px;
     margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
   }
 }
 
@@ -174,7 +148,7 @@ $large-screen: 1239px;
 
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
   @media (max-width: $small-screen) {
     display: block;
@@ -186,7 +160,7 @@ $large-screen: 1239px;
     @media (min-width: $medium-screen) and (max-width: $large-screen) {
       width: 600px;
       height: 400px;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
     }
     @media (max-width: $small-screen) {
       width: 325px;
@@ -239,39 +213,35 @@ $large-screen: 1239px;
   }
 }
 
-.minibox {
-  display: flex;
-
+.minibox__text {
   width: 955px;
-
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 100px;
+  text-align: center;
+  white-space: pre-line;
+  font-size: 36px;
 
-  &__text {
-    white-space: pre-line;
-    font-size: 20px;
-    margin-bottom: 30px;
-    font-weight: 400;
-    line-height: 22px; /* 122.222% */
-    letter-spacing: -0.72px;
-
-    @media (min-width: $medium-screen) and (max-width: $large-screen) {
-      font-size: 18px;
-    }
-    @media (max-width: $small-screen) {
-      font-size: 14px;
-      line-height: 18px; /* 128.571% */
-      letter-spacing: -0.56px;
-      margin-bottom: 0;
-    }
-  }
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -1.44px;
 
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     width: 100%;
+    font-size: 18px;
     margin-bottom: 50px;
+    line-height: 22px;
+    letter-spacing: -0.72px;
   }
   @media (max-width: $small-screen) {
+    text-align: start;
     width: 100%;
-    margin-bottom: 70px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: -0.72px;
+    margin-bottom: 50px;
   }
 }
 

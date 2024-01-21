@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { useTranslations } from 'next-intl';
 import styles from './Home.module.scss';
 import Sponsor from './Sponsor/Sponsor';

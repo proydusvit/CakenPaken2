@@ -13,25 +13,38 @@ import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
 export const metadata = {
   title: 'Cakenpaken',
   description: 'Cakenpaken',
+
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/favicon/favicon-32x32.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      url: '/favicon/favicon-16x16.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/favicon/apple-touch-icon.png',
+    },
+  ],
 };
-
-// const locales = ['en', 'uk'];
-
-// export function generateStaticParams() {
-//   return locales.map((locale) => ({locale}));
-// }
 
 export default function LocaleLayout({ children, params }) {
   const locale = useLocale();
   const t = useTranslations('Common');
-  // Show a 404 error if the user requests an unknown locale
+
   if (params.locale !== locale) {
     notFound();
   }
   return (
     <html lang={locale}>
       <head>
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -42,7 +55,7 @@ export default function LocaleLayout({ children, params }) {
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
-        <link
+        {/* <link
           rel="stylesheet"
           type="text/css"
           charSet="UTF-8"
@@ -52,7 +65,7 @@ export default function LocaleLayout({ children, params }) {
           rel="stylesheet"
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
+        /> */}
       </head>
 
       <body>

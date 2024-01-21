@@ -1,5 +1,5 @@
 import styles from '../Header.module.scss';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 
 const SupportBtn = ({ support, donate, isClicked }) => {
   return (

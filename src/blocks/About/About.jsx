@@ -34,10 +34,7 @@ const About = () => {
           ))}
         </div>
 
-        <div className={styles.team}>
-          <h3 className={styles.team__name}> {t('team')}</h3>
-          <p className={styles.team__text}>{t('weare')}</p>
-        </div>
+        <h3 className={styles.team__text}>{t('weare')}</h3>
 
         <div className={styles.box}>
           <Image
@@ -54,9 +51,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className={styles.minibox}>
-          <h3 className={styles.minibox__text}>{t('style')}</h3>
-        </div>
+        <h3 className={styles.minibox__text}>{t('style')}</h3>
 
         <SliderComponent list={listItems} />
 

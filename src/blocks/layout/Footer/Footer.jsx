@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import styles from './Footer.module.scss';
@@ -34,8 +34,24 @@ const Footer = () => {
           <Image src={Logo} width={245} height={91} alt="caken_logo" />
         </div>
         <div className={styles.develop}>
-          <Link href="https://linktr.ee/tsymbrivskaa">{t('design')}</Link>
-          <Link href="https://linktr.ee/proidysvit7">{t('develop')}</Link>
+          <div className={styles.develop_conact}>
+            <p className={styles.develop_conact_text}>
+              We are open to new projects!
+            </p>
+            <p className={styles.develop_mail}>
+              Contact us:
+              <span className={styles.develop_span}>
+                <Link href="mailto:pakencaken@gmail.com">
+                  pakencaken@gmail.com
+                </Link>
+              </span>
+            </p>
+          </div>
+          <div className={styles.developers}>
+            <Link href="https://linktr.ee/tsymbrivskaa">{t('design')}</Link>
+            <Link href="https://linktr.ee/proidysvit7">{t('develop')}</Link>
+            <p>2023</p>
+          </div>
         </div>
       </div>
     </div>

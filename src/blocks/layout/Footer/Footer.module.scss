@@ -18,7 +18,7 @@ $large-screen: 1239px;
   &_box {
     align-items: center;
     display: flex;
-    width: 1200px;
+    width: 1500px;
 
     margin: 0 auto;
     padding: 0 15px 0;
@@ -43,6 +43,7 @@ $large-screen: 1239px;
 }
 
 .box {
+  width: 450px;
   display: flex;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     display: block;
@@ -61,7 +62,7 @@ $large-screen: 1239px;
   line-height: 24px; /* 120% */
   letter-spacing: -0.8px;
   text-transform: capitalize;
-  margin-right: 30px;
+  margin-right: 25px;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     font-size: 14px;
 
@@ -91,21 +92,37 @@ $large-screen: 1239px;
     margin-bottom: 30px;
   }
 }
+
+// .develop {
+//   color: white;
+//   display: grid;
+//   font-size: 16px;
+//   text-align: end;
+//   font-weight: 400;
+//   line-height: 22px;
+//   letter-spacing: -0.72px;
+//   text-decoration-line: underline;
+//   > a {
+//     margin-bottom: 10px;
+//   }
+//   > a:last-child {
+//     margin-bottom: 0;
+//   }
+//   @media (min-width: $medium-screen) and (max-width: $large-screen) {
+//     font-size: 12px;
+//     text-align: center;
+//     line-height: 14px;
+//     letter-spacing: -0.48px;
+//   }
+//   @media (max-width: $small-screen) {
+//     text-align: center;
+//   }
+// }
 .develop {
+  width: 450px;
   color: white;
-  display: grid;
-  font-size: 16px;
+  margin: 0;
   text-align: end;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.72px;
-  text-decoration-line: underline;
-  > a {
-    margin-bottom: 10px;
-  }
-  > a:last-child {
-    margin-bottom: 0;
-  }
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     font-size: 12px;
     text-align: center;
@@ -114,5 +131,55 @@ $large-screen: 1239px;
   }
   @media (max-width: $small-screen) {
     text-align: center;
+  }
+  &_conact {
+    margin-bottom: 68px;
+    &_text {
+      font-size: 24px;
+
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: -0.96px;
+      margin-bottom: 10px;
+    }
+  }
+  &_mail {
+    font-size: 18px;
+
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.72px;
+  }
+  &_span {
+    margin-left: 15px;
+    font-size: 18px;
+
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: -0.72px;
+  }
+}
+.developers {
+  display: grid;
+  font-size: 12px;
+  color: #808080;
+
+  justify-items: end;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.48px;
+
+  > a {
+    text-decoration-line: underline;
+    margin-bottom: 10px;
+  }
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 12px;
+    justify-items: center;
+    line-height: 14px;
+    letter-spacing: -0.48px;
+  }
+  @media (max-width: $small-screen) {
+    justify-items: center;
   }
 }

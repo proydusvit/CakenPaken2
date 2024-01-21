@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import style from './BreadCrumbs.module.scss';
 
 export const BreadCrumbs = ({ list }) => {

@@ -77,9 +77,16 @@ $large-screen: 1239px;
     }
     &__gallery {
       background-image: linear-gradient(to bottom, #00000033, #00000033),
-        url('https://res.cloudinary.com/dg6fnnbpd/image/upload/f_auto,q_auto/Image_2_72e324b004');
+        url('../../assets/imgHome/Card_Projects.webp');
 
-      @include backFoto;
+      background-size: cover;
+      background-position: 0% 50%;
+      @media (min-width: $medium-screen) and (max-width: $large-screen) {
+        background-position: 100% 50%;
+      }
+      @media (max-width: $small-screen) {
+        background-position: 98% 50%;
+      }
     }
 
     &__crew {
@@ -121,7 +128,7 @@ $large-screen: 1239px;
   width: 100%;
   height: 777px;
   background-image: linear-gradient(to bottom, #00000033, #00000033),
-    url('https://res.cloudinary.com/dg6fnnbpd/image/upload/f_auto,q_auto/Image_4_3e1dd4b8e6');
+    url('../../assets/imgHome/Card_Gallery.webp');
 
   @include backFoto;
   color: #fefefe;

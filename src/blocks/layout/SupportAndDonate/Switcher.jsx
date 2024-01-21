@@ -2,14 +2,13 @@ import { Link } from '@/navigation';
 import styles from './SupportAndDonate.module.scss';
 import { usePathname } from '@/navigation';
 
-const Switcher = ({ currentLanguage, secondColor, setCurrentLanguage }) => {
+const Switcher = ({ currentLanguage, setCurrentLanguage }) => {
   const pathname = usePathname();
 
   return (
     <div style={{ display: 'flex', alignItems: 'center' }}>
       {currentLanguage === 'en' && (
         <Link
-          style={{ color: secondColor }}
           className={styles.lang}
           href={pathname}
           locale="uk"
@@ -20,7 +19,6 @@ const Switcher = ({ currentLanguage, secondColor, setCurrentLanguage }) => {
       )}
       {currentLanguage === 'uk' && (
         <Link
-          style={{ color: secondColor }}
           className={styles.lang}
           href={pathname}
           locale="en"

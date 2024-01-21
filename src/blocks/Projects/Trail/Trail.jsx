@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import styles from './Trail.module.scss';
-import SectionSecond from '../../../components/Section/SectionSecond.jsx';
+import Section from '@/components/Section/Section';
 
 import Image from 'next/image';
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
@@ -58,59 +58,60 @@ const Trail = () => {
     },
   ];
   return (
-    <div>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbsJsonLD) }}
         key="breadcrumbs-jsonld"
       />
-      <div className={styles.mainFoto}>
-        <h1> {t('trail')}</h1>
-      </div>
+      {/* <div className={styles.mainFoto}></div> */}
 
-      <SectionSecond>
+      <Section>
         {/* <BackLink
           link={'/projects'}
           back={t('projects')}
           current={t('trail')}
         /> */}
         <BreadCrumbs list={breadCrumbsList} />
-        <div className={styles.conception}>
-          <h3 className={styles.conception__name}>{t('conception')}</h3>
-          <p className={styles.conception__text}>{t('textT')}</p>
+        <div className={styles.box}>
+          <h1 className={styles.name}>{t('trail')}</h1>
+
+          <div className={styles.conception}>
+            <h2 className={styles.conception__text}>{t('textT')}</h2>
+          </div>
+
+          <VideoPlayer videoId={youtubeVideoId} />
+
+          <p className={styles.title}>{t('titleT')}</p>
+          <SliderComponent list={listSlider} />
+
+          <div className={styles.parent}>
+            <ul className={styles.list}>
+              {listItems.map(({ id, img, alt, width, height }, index) => (
+                <li
+                  key={id}
+                  className={
+                    index === 0
+                      ? styles.div1
+                      : index === 1
+                        ? styles.div2
+                        : styles.div3
+                  }
+                >
+                  <Image
+                    className={styles.img}
+                    src={img}
+                    alt={alt}
+                    width={width}
+                    height={height}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-
-        <SliderComponent list={listSlider} />
-
-        <div className={styles.parent}>
-          <ul className={styles.list}>
-            {listItems.map(({ id, img, alt, width, height }, index) => (
-              <li
-                key={id}
-                className={
-                  index === 0
-                    ? styles.div1
-                    : index === 1
-                      ? styles.div2
-                      : styles.div3
-                }
-              >
-                <Image
-                  className={styles.img}
-                  src={img}
-                  alt={alt}
-                  width={width}
-                  height={height}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <h4 className={styles.title}>{t('titleT')}</h4>
-        <VideoPlayer videoId={youtubeVideoId} />
-      </SectionSecond>
-    </div>
+      </Section>
+    </>
   );
 };
 

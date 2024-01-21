@@ -1,10 +1,9 @@
 import styles from '../Header.module.scss';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { usePathname } from '@/navigation';
 
 const Navigation = ({
   isClicked,
-
   projects,
   shop,
   events,

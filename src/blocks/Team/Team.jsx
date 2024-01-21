@@ -8,7 +8,7 @@ const Team = () => {
   const t = useTranslations('Team');
 
   return (
-    <Section className={styles.section}>
+    <Section>
       <h1 className={styles.title}>{t('team')}</h1>
       <FotoBox list={listTeam} />
       <h2 className={styles.join}>{t('joined')}</h2>

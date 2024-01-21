@@ -10,10 +10,10 @@ const DonateCaken = () => {
   return (
     <Section>
       <h1 className={style.title}>{t('supportcaken')}</h1>
-      <div className={style.donate}>
+      {/* <div className={style.donate}>
         <h2 className={style.donate_title}>{t('donation')}</h2>
         <p className={style.donate_text}>{t('textdonat')}</p>
-      </div>
+      </div> */}
 
       <ul className={style.fund}>
         {listItems.map(item => (

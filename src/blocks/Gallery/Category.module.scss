@@ -49,6 +49,7 @@ $large-screen: 1239px;
   align-items: center;
   justify-content: center;
   width: 50%;
+  background-image: url('../../assets/imgGallery/Category/film.webp');
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     height: 285px;
     width: 285px;
@@ -91,4 +92,8 @@ $large-screen: 1239px;
     letter-spacing: -1.44px;
     text-transform: uppercase;
   }
+}
+.trail {
+  @include backFoto;
+  background-image: url('../../assets/imgGallery/Trail/img9.webp');
 }

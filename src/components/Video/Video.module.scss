@@ -5,16 +5,13 @@ $large-screen: 1239px;
 .video {
   display: flex;
   justify-content: center;
-
-  margin-top: 100px;
-
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  height: 650px;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    display: block;
-
     width: 100%;
     height: 400px;
-
-    margin-top: 100px;
   }
 
   @media (max-width: $small-screen) {
@@ -26,13 +23,17 @@ $large-screen: 1239px;
 }
 
 .frame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 650px;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     width: 100%;
-    height: 100%;
+    height: 400px;
   }
 
   @media (max-width: $small-screen) {
     width: 100%;
-    height: 100%;
+    height: 250px;
   }
 }

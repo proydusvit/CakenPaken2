@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import styles from './Category.module.scss';
 import { listCategory } from './galleryList';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 
 const Category = () => {
   const t = useTranslations('Gallery');
@@ -10,25 +10,39 @@ const Category = () => {
     <section className={styles.section}>
       <h1 className={styles.title}> {t('gallery')}</h1>
 
-      <div className={styles.section__link}>
-        {listCategory.map(item => {
-          const imgCatg = item.img;
-          return (
-            <Link
-              key={item.id}
-              href={item.link}
-              className={styles.links}
-              style={{
-                backgroundImage: `linear-gradient(to bottom, #00000033, #00000033), url("${imgCatg}")`,
-              }}
-            >
-              <h3 className={styles.name}>{t(item.name)}</h3>
-            </Link>
-          );
-        })}
-      </div>
+      <ul className={styles.section__link}>
+        <li className={styles.links}>
+          <Link href="gallery/mountain_instant">
+            <h3 className={styles.name}>{t('film')}</h3>
+          </Link>
+        </li>
+        <li className={`${styles.trail} ${styles.links}`}>
+          <Link href="gallery/trail">
+            <h3 className={styles.name}>{t('trail')}</h3>
+          </Link>
+        </li>
+      </ul>
     </section>
   );
 };
 
 export default Category;
+//  <section className={styles.section}>
+//    <h1 className={styles.title}> {t('gallery')}</h1>
+
+//    <ul className={styles.section__link}>
+//      <li>
+//        <Link href="gallery/mountain_instant" className={styles.links}>
+//          <h3 className={styles.name}>{t('film')}</h3>
+//        </Link>
+//      </li>
+//      <li>
+//        <Link
+//          href="gallery/trail"
+//          className={`${styles.links} ${styles.trail}`}
+//        >
+//          <h3 className={styles.name}>{t('trail')}</h3>
+//        </Link>
+//      </li>
+//    </ul>
+//  </section>;

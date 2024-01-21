@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import SupportBtn from './SupportBtn/SupportBtn';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { useMediaQuery } from '@react-hook/media-query';
 import Navigation from './Navigation/Navigation';
 import styles from './Header.module.scss';

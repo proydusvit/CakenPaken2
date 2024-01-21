@@ -1,6 +1,7 @@
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { useTranslations } from 'next-intl';
 import styles from './Projects.module.scss';
+import Section from '@/components/Section/Section';
 // import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
 
 // const breadCrumbsList = [
@@ -18,20 +19,18 @@ const Projects = () => {
   const t = useTranslations('Projects');
 
   return (
-    <section className={styles.section}>
-      <div style={{ display: 'block' }}>
-        <h1 className={styles.name}>{t('projects')}</h1>
-      </div>
-      <Link className={styles.category} href="/projects/mountain_instant">
-        {t('film')}
-      </Link>
+    <Section>
+      <h1 className={styles.name}>{t('projects')}</h1>
+
+      <Link
+        className={styles.category}
+        href="/projects/mountain_instant"
+      ></Link>
       <Link
         className={`${styles.category} ${styles.category_two}`}
         href="/projects/trail"
-      >
-        {t('trail')}
-      </Link>
-    </section>
+      ></Link>
+    </Section>
   );
 };
 

@@ -29,13 +29,13 @@ export const listTeam = [
     id: 3,
     img: stas,
     name: 'Stas',
-    social: 'https://www.youtube.com/@CAKENPAKEN',
+    social: 'https://linktr.ee/_Kondalev59_',
   },
   {
     id: 4,
     img: natali,
     name: 'Natali',
-    social: 'https://www.youtube.com/@CAKENPAKEN',
+    social: 'https://linktr.ee/mini_lady_punk',
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const listTeam = [
     id: 6,
     img: yavych,
     name: 'Yavych',
-    social: 'https://www.youtube.com/@CAKENPAKEN',
+    social: 'https://linktr.ee/blackridercor',
   },
   {
     id: 7,
@@ -71,7 +71,7 @@ export const listTeam = [
     id: 10,
     img: bombar,
     name: 'Bombar',
-    social: 'https://linktr.ee/twe.etie',
+    social: 'https://linktr.ee/alexbombar',
   },
 ];
 

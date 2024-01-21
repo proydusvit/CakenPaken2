@@ -1,16 +1,13 @@
-import trail from '../../assets/imgGallery/Category/trail.webp';
-import film from '../../assets/imgGallery/Category/film.jpg';
-
 export const listCategory = [
   {
     id: 1,
-    img: 'https://res.cloudinary.com/dzrjsjo7z/image/upload/f_auto,q_auto/njqiror1h6rocp2itczn',
+    img: '../../assets/imgGallery/Category/film.webp',
     name: 'film',
     link: 'gallery/mountain_instant',
   },
   {
     id: 2,
-    img: 'https://res.cloudinary.com/dg6fnnbpd/image/upload/f_auto,q_auto/fc8sd0yxo3rki1vhsrfn',
+    img: '@/assets/imgGallery/Category/trail.webp',
     name: 'trail',
     link: 'gallery/trail',
   },

@@ -4,118 +4,82 @@ $small-screen: 767px;
 $medium-screen: 768px;
 $large-screen: 1239px;
 
-.mainFoto {
-  color: getColor('white-for-text');
-  width: 100%;
-  height: 777px;
+// .mainFoto {
+//   color: getColor('white-for-text');
+//   margin-top: 165px;
 
-  background: getColor('primary');
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url('../../../assets/imgProjects/film.webp');
-  @include backFoto;
+//   width: 100%;
+//   height: 800px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+//   background: getColor('primary');
+//   background-image: url('../../../assets/imgProjects/film.webp');
+//   @include backFoto;
 
-  > h1 {
-    text-align: center;
+//   > h1 {
+//     text-align: center;
+//     font-size: 100px;
+//     font-weight: 600;
+//     text-transform: uppercase;
 
-    font-size: 100px;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+//     @media (min-width: $medium-screen) and (max-width: $large-screen) {
+//       font-size: 52px;
+//       font-weight: 700;
+//       line-height: 56px;
+//       letter-spacing: -2.08px;
+//     }
 
-    @media (min-width: $medium-screen) and (max-width: $large-screen) {
-      font-size: 52px;
-      font-weight: 700;
-      line-height: 56px;
-      letter-spacing: -2.08px;
-    }
+//     @media (max-width: $small-screen) {
+//       font-size: 36px;
+//       width: 185px;
+//       font-weight: 700;
+//       line-height: 40px;
+//       letter-spacing: -1.44px;
+//     }
+//   }
 
-    @media (max-width: $small-screen) {
-      font-size: 36px;
-      width: 185px;
-      font-weight: 700;
-      line-height: 40px; /* 111.111% */
-      letter-spacing: -1.44px;
-    }
-  }
+//   @media (min-width: $medium-screen) and (max-width: $large-screen) {
+//     height: 600px;
+//   }
 
-  @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    height: 600px;
-  }
-
-  @media (max-width: $small-screen) {
-    height: 399.722px;
-  }
-}
+//   @media (max-width: $small-screen) {
+//     height: 399.722px;
+//   }
+// }
 
 .conception {
-  display: flex;
-  justify-content: space-between;
-
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 100px;
+  width: 1166px;
+  white-space: pre-line;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -1.44px;
 
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+    letter-spacing: -0.72px;
     display: block;
+    width: 75vw;
   }
 
   @media (max-width: $small-screen) {
+    width: 85vw;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.56px;
     display: block;
     margin-bottom: 50px;
-  }
-
-  &__name {
-    font-size: 36px;
-    line-height: 42px; /* 116.667% */
-    letter-spacing: -1.44px;
-    text-transform: uppercase;
-
-    @media (min-width: $medium-screen) and (max-width: $large-screen) {
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: $small-screen) {
-      font-size: 22px;
-      line-height: 26px; /* 118.182% */
-      letter-spacing: -0.88px;
-
-      margin-bottom: 10px;
-    }
-  }
-
-  &__text {
-    width: 950px;
-
-    white-space: pre-line;
-
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: -0.72px;
-
-    @media (min-width: $medium-screen) and (max-width: $large-screen) {
-      width: 75vw;
-    }
-
-    @media (max-width: $small-screen) {
-      width: 85vw;
-      font-size: 14px;
-      line-height: 18px; /* 128.571% */
-      letter-spacing: -0.56px;
-    }
   }
 }
 .list {
   display: flex;
   justify-content: space-between;
-
-  margin-bottom: 100px;
+  // margin: 0 -50px 100px -50px;
 
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     display: block;
@@ -143,14 +107,14 @@ $large-screen: 1239px;
   white-space: pre-line;
 
   width: 1100px;
-
+  margin-bottom: 100px;
   font-size: 25px;
-  line-height: 32px; /* 128% */
+  line-height: 32px;
   letter-spacing: -1px;
-  text-transform: capitalize;
 
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   @media (max-width: $small-screen) {
@@ -159,52 +123,76 @@ $large-screen: 1239px;
     margin-top: 50px;
     line-height: 22px;
     letter-spacing: -0.72px;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }
+.name {
+  font-size: 50px;
 
-.video {
-  display: flex;
-  justify-content: center;
-
-  margin-top: 100px;
-
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    display: block;
-
-    width: 100%;
-    height: 400px;
-
-    margin-top: 100px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: -1.12px;
   }
 
   @media (max-width: $small-screen) {
-    width: 100%;
-    height: 250px;
-
-    margin-top: 50px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: -1.12px;
   }
 }
-
-.frame {
-  @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    width: 100%;
-    height: 100%;
-  }
-
-  @media (max-width: $small-screen) {
-    width: 100%;
-    height: 100%;
-  }
+.box {
+  text-align: center;
 }
+// .video {
+//   display: flex;
+//   justify-content: center;
 
-.img {
-  @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    width: 591px;
-    height: 600px;
-  }
+//   margin-top: 100px;
 
-  @media (max-width: $small-screen) {
-    width: 90vw;
-    height: 422px;
-  }
-}
+//   @media (min-width: $medium-screen) and (max-width: $large-screen) {
+//     display: block;
+
+//     width: 100%;
+//     height: 400px;
+
+//     margin-top: 100px;
+//   }
+
+//   @media (max-width: $small-screen) {
+//     width: 100%;
+//     height: 250px;
+
+//     margin-top: 50px;
+//   }
+// }
+
+// .frame {
+//   @media (min-width: $medium-screen) and (max-width: $large-screen) {
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   @media (max-width: $small-screen) {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
+// .img {
+//   @media (min-width: $medium-screen) and (max-width: $large-screen) {
+//     width: 591px;
+//     height: 600px;
+//   }
+
+//   @media (max-width: $small-screen) {
+//     width: 90vw;
+//     height: 422px;
+//   }
+// }
