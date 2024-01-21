@@ -47,10 +47,12 @@ $large-screen: 1239px;
   display: flex;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     display: block;
+    width: 100%;
     margin-bottom: 50px;
   }
   @media (max-width: $small-screen) {
     display: block;
+    width: 100%;
     margin-bottom: 100px;
   }
 }
@@ -127,10 +129,12 @@ $large-screen: 1239px;
     font-size: 12px;
     text-align: center;
     line-height: 14px;
+    width: 100%;
     letter-spacing: -0.48px;
   }
   @media (max-width: $small-screen) {
     text-align: center;
+    width: 100%;
   }
   &_conact {
     margin-bottom: 68px;
@@ -177,6 +181,7 @@ $large-screen: 1239px;
     font-size: 12px;
     justify-items: center;
     line-height: 14px;
+
     letter-spacing: -0.48px;
   }
   @media (max-width: $small-screen) {
