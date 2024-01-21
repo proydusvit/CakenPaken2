@@ -45,6 +45,10 @@ export default function LocaleLayout({ children, params }) {
   return (
     <html lang={locale}>
       <head>
+        <meta
+          name="google-site-verification"
+          content="9nYQKYEf0byKPYzfH7aJKu29SAgg0dWt_ZONK2TgTMc"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
