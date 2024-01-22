@@ -3,7 +3,7 @@ $medium-screen: 768px;
 $large-screen: 1239px;
 
 .footer {
-  padding: 130px 15px;
+  padding: 40px 15px;
 
   background: black;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
@@ -137,7 +137,7 @@ $large-screen: 1239px;
     width: 100%;
   }
   &_conact {
-    margin-top: 100px;
+    margin-top: 140px;
     margin-bottom: 68px;
     @media (min-width: $medium-screen) and (max-width: $large-screen) {
       margin-top: 0;

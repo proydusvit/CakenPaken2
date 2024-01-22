@@ -79,23 +79,14 @@ const EdgeOfWar = () => {
 
           <div className={styles.parent}>
             <ul className={styles.list}>
-              {listItems.map(({ id, img, alt, width, height }, index) => (
-                <li
-                  key={id}
-                  className={
-                    index === 0
-                      ? styles.div1
-                      : index === 1
-                        ? styles.div2
-                        : styles.div3
-                  }
-                >
+              {listItems.map(({ img, alt }, index) => (
+                <li key={index}>
                   <Image
                     className={styles.img}
                     src={img}
                     alt={alt}
-                    width={width}
-                    height={height}
+                    // width={width}
+                    // height={height}
                   />
                 </li>
               ))}

@@ -28,7 +28,7 @@ $large-screen: 1239px;
 }
 .category {
   width: 100%;
-  height: 750px;
+  height: 650px;
   text-align: center;
   background-image: url('../../assets/imgProjects/film.webp');
   @include backFoto;
@@ -42,10 +42,10 @@ $large-screen: 1239px;
   @media (min-width: $medium-screen) and (max-width: 901px) {
     margin-left: -100px;
     width: 100vw;
-    height: 464px;
+    height: 414px;
   }
   @media (max-width: $small-screen) {
-    height: 254px;
+    height: 205px;
     width: 100vw;
     margin-left: -22px;
   }
@@ -53,13 +53,12 @@ $large-screen: 1239px;
     background-size: cover;
     background-position: 1% 10%;
     background-image: url('../../assets/imgProjects/zavtra.webp');
-    // @media (min-width: $medium-screen) and (max-width: 980px) {
-    //   background-size: cover;
-    //   background-position: 50% 50%;
-    // }
-    // @media (max-width: $small-screen) {
-    //   height: 404px;
-    // }
+    @media (min-width: $medium-screen) and (max-width: 980px) {
+      background-position: 1% 100%;
+    }
+    @media (max-width: $small-screen) {
+      background-position: 1% 93%;
+    }
   }
   &_three {
     background-size: cover;

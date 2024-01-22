@@ -66,7 +66,7 @@ $large-screen: 1239px;
 .section__link {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   margin-bottom: 50px;
 }
 .name {
@@ -96,4 +96,8 @@ $large-screen: 1239px;
 .trail {
   @include backFoto;
   background-image: url('../../assets/imgGallery/Trail/img9.webp');
+}
+.border {
+  @include backFoto;
+  background-image: url('../../assets/imgProjects/border1.webp');
 }

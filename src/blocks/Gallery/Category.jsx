@@ -22,12 +22,12 @@ const Category = () => {
           <h3 className={styles.name}>{t('trail')}</h3>
         </Link>
 
-        {/* <Link
-          className={`${styles.trail} ${styles.links}`}
-          href="gallery/"
+        <Link
+          className={`${styles.border} ${styles.links}`}
+          href="gallery/edge_of_war"
         >
-          <h3 className={styles.name}>{t('trail')}</h3>
-        </Link> */}
+          <h3 className={styles.name}>{t('border')}</h3>
+        </Link>
       </div>
     </section>
   );
