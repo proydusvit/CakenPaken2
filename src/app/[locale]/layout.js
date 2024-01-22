@@ -11,8 +11,8 @@ import Footer from '@/blocks/layout/Footer/Footer';
 import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
 
 export const metadata = {
-  title: 'Cakenpaken',
-  description: 'Cakenpaken',
+  title: 'CakenPaken',
+  description: 'CakenPaken',
 
   icons: [
     {
@@ -39,12 +39,24 @@ export default function LocaleLayout({ children, params }) {
   const locale = useLocale();
   const t = useTranslations('Common');
 
+  const websiteJsonLd = {
+    '@context': 'https://schema.org/',
+    '@type': 'WebSite',
+    name: 'CakenPaken',
+    url: 'https://www.cakenpaken.com/',
+  };
+
   if (params.locale !== locale) {
     notFound();
   }
   return (
     <html lang={locale}>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+          key="website-jsonld"
+        />
         <meta
           name="google-site-verification"
           content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"

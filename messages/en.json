@@ -1,5 +1,6 @@
 {
   "Home": {
+    "cak": "CakenPaken",
     "merch": "Merch",
     "crew": "Crew",
     "projects": "Projects",
@@ -57,7 +58,7 @@
   },
   "Support": {
     "title": "support Ukraine in the war against Russia",
-    "donation": "donation",
+    "donation": "Donation",
     "circle": "Olympic Circle",
     "text": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. ",
     "donate": "Donate",
