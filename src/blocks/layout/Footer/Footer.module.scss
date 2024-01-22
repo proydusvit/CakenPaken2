@@ -18,7 +18,7 @@ $large-screen: 1239px;
   &_box {
     align-items: center;
     display: flex;
-    width: 1500px;
+    width: 1240px;
 
     margin: 0 auto;
     padding: 0 15px 0;
@@ -43,7 +43,7 @@ $large-screen: 1239px;
 }
 
 .box {
-  width: 450px;
+  width: 420px;
   display: flex;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     display: block;
@@ -61,20 +61,20 @@ $large-screen: 1239px;
   color: white;
   font-size: 20px;
 
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   letter-spacing: -0.8px;
   text-transform: capitalize;
   margin-right: 25px;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     font-size: 14px;
 
-    line-height: 18px; /* 128.571% */
+    line-height: 18px;
     letter-spacing: -0.56px;
   }
   @media (max-width: $small-screen) {
     font-size: 14px;
     margin-right: 12px;
-    line-height: 18px; /* 128.571% */
+    line-height: 18px;
     letter-spacing: -0.56px;
     text-transform: capitalize;
   }
@@ -87,7 +87,7 @@ $large-screen: 1239px;
   color: white;
   font-size: 20px;
 
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   letter-spacing: -0.8px;
   text-transform: capitalize;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
@@ -121,7 +121,7 @@ $large-screen: 1239px;
 //   }
 // }
 .develop {
-  width: 450px;
+  width: 420px;
   color: white;
   margin: 0;
   text-align: end;
@@ -137,7 +137,14 @@ $large-screen: 1239px;
     width: 100%;
   }
   &_conact {
+    margin-top: 100px;
     margin-bottom: 68px;
+    @media (min-width: $medium-screen) and (max-width: $large-screen) {
+      margin-top: 0;
+    }
+    @media (max-width: $small-screen) {
+      margin-top: 0;
+    }
     &_text {
       font-size: 24px;
 

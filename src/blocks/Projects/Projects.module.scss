@@ -61,4 +61,16 @@ $large-screen: 1239px;
     //   height: 404px;
     // }
   }
+  &_three {
+    background-size: cover;
+    background-position: 1% 10%;
+    background-image: url('../../assets/imgProjects/borderwar.webp');
+    // @media (min-width: $medium-screen) and (max-width: 980px) {
+    //   background-size: cover;
+    //   background-position: 50% 50%;
+    // }
+    // @media (max-width: $small-screen) {
+    //   height: 404px;
+    // }
+  }
 }

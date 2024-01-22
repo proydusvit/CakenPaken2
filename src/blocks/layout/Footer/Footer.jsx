@@ -35,11 +35,9 @@ const Footer = () => {
         </div>
         <div className={styles.develop}>
           <div className={styles.develop_conact}>
-            <p className={styles.develop_conact_text}>
-              We are open to new projects!
-            </p>
+            <p className={styles.develop_conact_text}>{t('open')}</p>
             <p className={styles.develop_mail}>
-              Contact us:
+              {t('contactus')}
               <span className={styles.develop_span}>
                 <Link href="mailto:pakencaken@gmail.com">
                   pakencaken@gmail.com

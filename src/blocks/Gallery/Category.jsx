@@ -10,18 +10,25 @@ const Category = () => {
     <section className={styles.section}>
       <h1 className={styles.title}> {t('gallery')}</h1>
 
-      <ul className={styles.section__link}>
-        <li className={styles.links}>
-          <Link href="gallery/mountain_instant">
-            <h3 className={styles.name}>{t('film')}</h3>
-          </Link>
-        </li>
-        <li className={`${styles.trail} ${styles.links}`}>
-          <Link href="gallery/trail">
-            <h3 className={styles.name}>{t('trail')}</h3>
-          </Link>
-        </li>
-      </ul>
+      <div className={styles.section__link}>
+        <Link className={styles.links} href="gallery/mountain_instant">
+          <h3 className={styles.name}>{t('film')}</h3>
+        </Link>
+
+        <Link
+          className={`${styles.trail} ${styles.links}`}
+          href="gallery/trail"
+        >
+          <h3 className={styles.name}>{t('trail')}</h3>
+        </Link>
+
+        {/* <Link
+          className={`${styles.trail} ${styles.links}`}
+          href="gallery/"
+        >
+          <h3 className={styles.name}>{t('trail')}</h3>
+        </Link> */}
+      </div>
     </section>
   );
 };

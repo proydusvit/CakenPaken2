@@ -8,10 +8,9 @@ import Image from 'next/image';
 import SliderComponent from '@/components/slider/SliderComponent';
 import VideoPlayer from '@/components/Video/Videoplayer';
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
-import { useLocale } from 'next-intl';
+
 const Film = () => {
   const t = useTranslations('Projects');
-  const locale = useLocale();
 
   const youtubeVideoId = 'ElKO3_Ovxgw?si=4i7EY7ezUIERFOHK';
 
@@ -55,7 +54,7 @@ const Film = () => {
       text: t('projects'),
     },
     {
-      link: `${locale}/projects/mountain_instant`,
+      link: `/projects/mountain_instant`,
       text: t('film'),
     },
   ];
