@@ -47,7 +47,7 @@ export default function LocaleLayout({ children, params }) {
       <head>
         <meta
           name="google-site-verification"
-          content="9nYQKYEf0byKPYzfH7aJKu29SAgg0dWt_ZONK2TgTMc"
+          content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
