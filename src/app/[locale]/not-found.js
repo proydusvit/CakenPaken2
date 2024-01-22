@@ -1,7 +1,12 @@
-import React from 'react';
+import Link from 'next/link';
 
 const NotFound = () => {
-  return <div>NotFound</div>;
+  return (
+    <div>
+      <h1> NotFound</h1>
+      <Link href="/">Return Home</Link>
+    </div>
+  );
 };
 
 export default NotFound;
