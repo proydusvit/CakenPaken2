@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import styles from './Mind.module.scss';
 
 import Section from '@/components/Section/Section';
-import { listItems } from './fotoMlist';
+import { listItems } from './fotoList';
 import Image from 'next/image';
 
 import SliderComponent from '@/components/slider/SliderComponent';
