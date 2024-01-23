@@ -100,7 +100,8 @@ $large-screen: 1239px;
   }
 
   @media (max-width: $small-screen) {
-    font-size: 28px;
+    font-size: 25px;
+    line-height: 45px;
     margin-bottom: 20px;
     letter-spacing: -1.12px;
   }
