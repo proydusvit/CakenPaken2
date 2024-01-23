@@ -34,6 +34,10 @@ const Projects = () => {
         className={`${styles.category} ${styles.category_three}`}
         href="/projects/edge_of_war"
       ></Link>
+      <Link
+        className={`${styles.category} ${styles.category_mind}`}
+        href="/projects/mind"
+      ></Link>
     </Section>
   );
 };
