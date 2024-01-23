@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import styles from './Film.module.scss';
 
 import Section from '@/components/Section/Section';
-import { listItems } from './fotoList';
+import { listItems } from './fotoMList';
 import Image from 'next/image';
 
 import SliderComponent from '@/components/slider/SliderComponent';
