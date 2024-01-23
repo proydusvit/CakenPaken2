@@ -3,7 +3,7 @@ import createMiddleware from 'next-intl/middleware';
 export default createMiddleware({
   locales: ['en', 'uk'],
   defaultLocale: 'uk',
-  localePrefix: 'never',
+  localePrefix: 'always',
 });
 
 export const config = {
