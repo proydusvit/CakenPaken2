@@ -8,7 +8,7 @@ export async function generateMetadata({ params: { locale } }) {
     openGraph: {
       title: t('about'),
       description: 'Сторінка про що таке CakenPaken',
-      url: `${process.env.HOST}/authors`,
+      url: `www.cakenpaken/about`,
       siteName: 'CakenPaken',
       images: [
         {
