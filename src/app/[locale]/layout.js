@@ -13,7 +13,8 @@ import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
 export const metadata = {
   title: 'CakenPaken',
   description: 'CakenPaken',
-
+  viewport:
+    'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no',
   icons: [
     {
       rel: 'icon',
