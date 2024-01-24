@@ -1,0 +1,154 @@
+.title {
+  font-size: 50px;
+  text-align: center;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1.12px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1.44px;
+  }
+}
+
+.join {
+  font-size: 50px;
+  text-align: center;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .join {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1.12px;
+  }
+}
+@media (max-width: 767px) {
+  .join {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1.44px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .box {
+    display: flex;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+  }
+}
+.list li {
+  cursor: pointer;
+  margin-bottom: -5px;
+}
+
+.teamMember {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+.teamMember .memberName {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 25px;
+  color: white;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -1.44px;
+  text-transform: uppercase;
+  text-align: flex-start;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .teamMember .memberName {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.72px;
+    padding: 5px 5px;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .teamMember .memberName {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.72px;
+    padding: 5px 5px;
+    opacity: 1;
+  }
+}
+.teamMember .memberLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .teamMember .memberLink {
+    padding: 5px 5px;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .teamMember .memberLink {
+    padding: 5px 5px;
+    opacity: 1;
+  }
+}
+.teamMember:hover .memberLink {
+  opacity: 1;
+}
+.teamMember:hover .memberName {
+  opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .img {
+    width: 189px;
+    height: 189px;
+  }
+}
+@media (max-width: 767px) {
+  .img {
+    width: 160px;
+    height: 160px;
+  }
+}/*# sourceMappingURL=Team.module.css.map */

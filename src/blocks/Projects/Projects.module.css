@@ -1,0 +1,76 @@
+.name {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .name {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1.12px;
+  }
+}
+@media (max-width: 767px) {
+  .name {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1.44px;
+  }
+}
+
+.category {
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  background-image: url("../../assets/imgProjects/film.webp");
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 901px) and (max-width: 1237px) {
+  .category {
+    height: 504px;
+  }
+}
+@media (min-width: 768px) and (max-width: 901px) {
+  .category {
+    margin-left: -100px;
+    width: 100vw;
+    height: 414px;
+  }
+}
+@media (max-width: 767px) {
+  .category {
+    height: 205px;
+    width: 100vw;
+    margin-left: -22px;
+  }
+}
+.category_two {
+  background-size: cover;
+  background-position: 1% 10%;
+  background-image: url("../../assets/imgProjects/zavtra.webp");
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .category_two {
+    background-position: 1% 100%;
+  }
+}
+@media (max-width: 767px) {
+  .category_two {
+    background-position: 1% 93%;
+  }
+}
+.category_three {
+  background-size: cover;
+  background-position: 1% 10%;
+  background-image: url("../../assets/imgProjects/borderwar.webp");
+}
+.category_mind {
+  background-image: url("../../assets/imgProjects/mind.webp");
+}/*# sourceMappingURL=Projects.module.css.map */

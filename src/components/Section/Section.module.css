@@ -1,0 +1,17 @@
+.section {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 150px 15px 200px;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .section {
+    width: 100vw;
+    padding: 130px 100px;
+  }
+}
+@media (max-width: 767px) {
+  .section {
+    width: 100vw;
+    padding: 140px 22px 100px;
+  }
+}/*# sourceMappingURL=Section.module.css.map */

@@ -1,0 +1,12 @@
+@media (min-width: 768px) and (max-width: 1439px) {
+  .svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .svg {
+    width: 30px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=linkSvg.module.css.map */

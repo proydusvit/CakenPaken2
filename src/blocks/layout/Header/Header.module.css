@@ -1,0 +1,193 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.header {
+  position: fixed;
+  width: 336.038px;
+  height: 91px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 80px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  z-index: 100;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .header {
+    padding: 10px 25px 10px 15px;
+    font-size: 14px;
+    height: 64px;
+    width: 260px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    position: absolute;
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+    width: 70vw;
+    display: flex;
+    opacity: 1;
+    justify-content: space-between;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.content {
+  height: 0;
+  position: absolute;
+  width: 336.038px;
+  z-index: -1;
+  overflow: hidden;
+  padding: 0 40px;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .content {
+    margin-left: -15px;
+    margin-top: 20px;
+    width: auto;
+  }
+}
+
+.visible {
+  transition: height 0.5s ease-out;
+  background: white;
+  height: 403px;
+  width: 336.038px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 35px 40px;
+  z-index: 5;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .visible {
+    width: 260px;
+    height: 372px;
+    padding: 30px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .visible {
+    width: 100vw;
+    padding: 55px 22px;
+    height: 650px;
+    box-shadow: 0;
+  }
+}
+
+.list {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+@media (max-width: 767px) {
+  .list {
+    margin-top: 50px;
+    margin-left: 15%;
+  }
+}
+.list > li {
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .list > li {
+    margin-bottom: 20px;
+  }
+}
+.list > li:last-child {
+  margin-bottom: 0;
+}
+
+.link {
+  color: #000;
+  font-weight: 400;
+  font-size: 25px;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .link {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .link {
+    font-size: 26px;
+  }
+}
+.link:hover, .link:focus {
+  font-weight: 700;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.img {
+  animation: shrinkText 2s linear forwards;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .img {
+    width: 125px;
+    height: 45px;
+  }
+}
+
+.support {
+  font-size: 14px;
+  width: 145px;
+  padding: 13px;
+  border-radius: 52px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #fff;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+.donate {
+  width: 145px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 14px;
+  border-radius: 52px;
+}
+
+.donate_link {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .donate_link {
+    display: none;
+  }
+}
+
+.linkDisabled {
+  color: grey;
+  text-decoration: none;
+  cursor: not-allowed;
+  font-weight: 400;
+  font-size: 25px;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .linkDisabled {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .linkDisabled {
+    font-size: 26px;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

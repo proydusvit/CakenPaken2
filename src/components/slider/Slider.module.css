@@ -1,0 +1,8 @@
+.sliderbox {
+  display: none;
+}
+@media (max-width: 767px) {
+  .sliderbox {
+    display: block;
+  }
+}/*# sourceMappingURL=Slider.module.css.map */

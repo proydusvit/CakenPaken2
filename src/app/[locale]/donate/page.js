@@ -4,7 +4,22 @@ export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Support' });
 
   return {
-    title: t('suppotteam'),
+    title: t('about'),
+    openGraph: {
+      title: t('about'),
+      description: 'Що таке CakenPaken',
+      url: `www.cakenpaken/donate`,
+      siteName: 'CakenPaken',
+      images: [
+        {
+          url: '../../../assets/imgAbout/Image_About.webp',
+          width: 192,
+          height: 192,
+        },
+      ],
+      locale: locale,
+      type: 'website',
+    },
   };
 }
 const Donate = () => {

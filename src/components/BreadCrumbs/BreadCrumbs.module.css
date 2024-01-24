@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.nav {
+  color: #8f8f8f;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 100px;
+}
+@media (max-width: 767px) {
+  .nav {
+    margin-bottom: 50px;
+  }
+}
+
+.link:hover,
+.link:focus {
+  color: black;
+}
+
+.link {
+  font-size: 1rem;
+}
+@media (min-width: 767px) {
+  .link {
+    font-size: 1rem; /* Відповідає md:text-quot у Tailwind */
+  }
+}
+@media (min-width: 1239px) {
+  .link {
+    font-size: 1.125rem; /* Відповідає xl:text-t14 у Tailwind */
+  }
+}
+
+.span {
+  margin: 0 5px;
+}/*# sourceMappingURL=BreadCrumbs.module.css.map */

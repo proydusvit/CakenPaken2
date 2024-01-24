@@ -1,0 +1,18 @@
+.list {
+  margin-top: 40px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .list {
+    margin-top: 50px;
+    justify-content: center;
+  }
+}
+.list > li {
+  margin-right: 20px;
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .list > li {
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=SocialMedia.module.css.map */
