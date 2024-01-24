@@ -11,7 +11,7 @@ export async function generateMetadata({ params: { locale } }) {
       siteName: 'CakenPaken',
       images: [
         {
-          url: '../../../assets/imgAbout/Image_About.webp',
+          url: 'https://res.cloudinary.com/dzrjsjo7z/image/upload/v1700133880/ap3hds38ylmfxvf1vcbs.jpg',
           width: 192,
           height: 192,
         },
