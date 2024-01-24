@@ -7,7 +7,7 @@ export async function generateMetadata({ params: { locale } }) {
     openGraph: {
       title: t('gallery'),
       description: 'Гелерея CakenPaken',
-      url: `www.cakenpaken/about`,
+      url: `www.cakenpaken/gallery`,
       siteName: 'CakenPaken',
       images: [
         {
