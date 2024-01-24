@@ -36,14 +36,12 @@ const Footer = () => {
         <div className={styles.develop}>
           <div className={styles.develop_conact}>
             <p className={styles.develop_conact_text}>{t('open')}</p>
-            <p className={styles.develop_mail}>
-              {t('contactus')}
-              <span className={styles.develop_span}>
-                <Link href="mailto:pakencaken@gmail.com">
-                  pakencaken@gmail.com
-                </Link>
-              </span>
-            </p>
+            <p className={styles.develop_mail}>{t('contactus')}</p>
+            <span className={styles.develop_span}>
+              <Link href="mailto:pakencaken@gmail.com">
+                pakencaken@gmail.com
+              </Link>
+            </span>
           </div>
           <div className={styles.developers}>
             <Link href="https://linktr.ee/tsymbrivskaa">{t('design')}</Link>
