@@ -12,14 +12,9 @@ export async function generateMetadata({ params: { locale } }) {
       siteName: 'CakenPaken',
       images: [
         {
-          url: '/public/favicon/android-chrome-192x192.png',
+          url: '../../../assets/imgAbout/Image_About.webp',
           width: 192,
           height: 192,
-        },
-        {
-          url: '/public/favicon/android-chrome-512x512.png',
-          width: 512,
-          height: 512,
         },
       ],
       locale: locale,
