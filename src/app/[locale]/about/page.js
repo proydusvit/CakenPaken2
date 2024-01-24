@@ -7,21 +7,21 @@ export async function generateMetadata({ params: { locale } }) {
     title: t('about'),
     openGraph: {
       title: t('about'),
-      description: 'Сторінка про що таке CakenPaken',
+      description: 'Що таке CakenPaken',
       url: `www.cakenpaken/about`,
       siteName: 'CakenPaken',
-      images: [
-        {
-          url: '/favicon/android-chrome-512x512.png',
-          width: 512,
-          height: 512,
-        },
-        {
-          url: '/favicon/android-chrome-192x192.png',
-          width: 192,
-          height: 192,
-        },
-      ],
+      // images: [
+      //   {
+      //     url: '/favicon/android-chrome-512x512.png',
+      //     width: 512,
+      //     height: 512,
+      //   },
+      //   {
+      //     url: '/favicon/android-chrome-192x192.png',
+      //     width: 192,
+      //     height: 192,
+      //   },
+      // ],
       locale: locale,
       type: 'website',
     },
