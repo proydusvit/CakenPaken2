@@ -4,10 +4,10 @@ export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Support' });
 
   return {
-    title: t('about'),
+    title: t('donate'),
     openGraph: {
-      title: t('about'),
-      description: 'Що таке CakenPaken',
+      title: t('donate'),
+      description: 'Help us',
       url: `www.cakenpaken/donate`,
       siteName: 'CakenPaken',
       images: [
