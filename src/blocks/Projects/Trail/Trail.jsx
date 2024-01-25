@@ -82,7 +82,7 @@ const Trail = () => {
 
           <VideoPlayer videoId={youtubeVideoId} />
 
-          <p className={styles.title}>{t('titleT')}</p>
+          
           <SliderComponent list={listSlider} />
 
           <div className={styles.parent}>
