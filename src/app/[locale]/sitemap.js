@@ -1,4 +1,4 @@
-export default function sitemap() {
+export default async function sitemap() {
   return [
     {
       url: 'https://www.cakenpaken.com/',
