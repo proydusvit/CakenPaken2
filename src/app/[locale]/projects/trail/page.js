@@ -9,7 +9,7 @@ export async function generateMetadata({ params: { locale } }) {
     openGraph: {
       title: ` ${t('trail')} | ${t('cak')}`,
       description: ` ${t('trail')} | ${t('cak')}`,
-      url: `www.cakenpaken/gallery/trail`,
+      url: `www.cakenpaken/projects/trail`,
       siteName: 'CakenPaken',
 
       locale: locale,
