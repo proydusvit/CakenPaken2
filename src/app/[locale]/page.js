@@ -13,7 +13,13 @@ export async function generateMetadata({ params: { locale } }) {
       description: t('cak'),
       url: `www.cakenpaken/`,
       siteName: 'CakenPaken',
-
+      images: [
+        {
+          url: 'https://res.cloudinary.com/dzrjsjo7z/image/upload/v1706289851/rkhnc0xe3c2b7fnzgf6o.jpg',
+          width: 192,
+          height: 192,
+        },
+      ],
       locale: locale,
       type: 'website',
     },
