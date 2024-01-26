@@ -53,7 +53,7 @@ export const listTeam = [
     id: 7,
     img: dima,
     name: 'Savchuk',
-    social: 'https://www.youtube.com/@CAKENPAKEN',
+    social: 'https://linktr.ee/lutyj1664?utm_source=linktree_admin_share',
   },
   {
     id: 8,
@@ -65,7 +65,7 @@ export const listTeam = [
     id: 9,
     img: arsen,
     name: 'Arsen',
-    social: 'https://www.youtube.com/@CAKENPAKEN',
+    social: 'https://linktr.ee/maestrochill',
   },
   {
     id: 10,
