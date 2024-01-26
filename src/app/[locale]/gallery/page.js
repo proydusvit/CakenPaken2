@@ -3,10 +3,11 @@ import { getTranslations } from 'next-intl/server';
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Gallery' });
   return {
-    title: t('gallery'),
+    title: ` ${t('gallery')} | ${t('cak')}`,
+    description: ` ${t('gallery')} | ${t('cak')}`,
     openGraph: {
-      title: t('gallery'),
-      description: 'Гелерея CakenPaken',
+      title: ` ${t('gallery')} | ${t('cak')}`,
+      description: ` ${t('gallery')} | ${t('cak')}`,
       url: `www.cakenpaken/gallery`,
       siteName: 'CakenPaken',
       images: [

@@ -4,10 +4,11 @@ export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Projects' });
 
   return {
-    title: t('film'),
+    title: ` ${t('film')} | ${t('cak')}`,
+    description: ` ${t('film')} | ${t('gallery')} | ${t('cak')}`,
     openGraph: {
-      title: t('film'),
-      description: 'Гелерея Гірська мить',
+      title: ` ${t('film')} | ${t('cak')}`,
+      description: ` ${t('film')} | ${t('gallery')} | ${t('cak')}`,
       url: `www.cakenpaken/gallery/mountain_instant`,
       siteName: 'CakenPaken',
       images: [

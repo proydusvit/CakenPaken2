@@ -5,7 +5,17 @@ export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Support' });
 
   return {
-    title: t('donation'),
+    title: ` ${t('donation')} | ${t('cak')}`,
+    description: ` ${t('donation')} | ${t('cak')}`,
+    openGraph: {
+      title: ` ${t('donation')} | ${t('cak')}`,
+      description: ` ${t('donation')} | ${t('cak')}`,
+      url: `www.cakenpaken/support`,
+      siteName: 'CakenPaken',
+
+      locale: locale,
+      type: 'website',
+    },
   };
 }
 const Support = () => {

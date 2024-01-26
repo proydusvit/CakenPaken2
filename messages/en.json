@@ -12,6 +12,7 @@
     "support": "Support Ukraine"
   },
   "About": {
+    "cak": "CakenPaken",
     "about": "About Us",
     "caken": "Сaken-paken! Sounds like a call.",
     "weare": "Caken Paken - the vision of the strong in spirit. This is unique team of the professionals that directly involved in creating powerful stories and documenting the strength of Ukrainian cultural communities. Caken Paken supports its heroes. They live on the edge of mutual synergy of inner strength and extreme to demonstrate to the audience significant activities of robust citizens. \n To amaze and inspire, to engage the viewers through first-hand experience, to tell stories and help to feel the presence - are the main goals. The mission of the project is to open new horizons of beauty in Ukrainian culture and to celebrate the ethnic character.",
@@ -20,6 +21,7 @@
     "style": "It's about style, devotion, the smell of freedom, the desperation and furious actions of the unconquered. We don't just create a film - we help open the door to a world where impossibility is just a word in a dictionary.\nWe promise, your inner flame will ignite, and the desire to create and fight with a sense of fear will definitely increase.\n Stay with us to do great things TOGETHER!"
   },
   "Common": {
+    "cak": "CakenPaken",
     "donate": "Support Team",
     "support": "Donate",
     "projects": "Projects",
@@ -34,6 +36,7 @@
     "develop": "Developed by Vlad Shestavetskyi"
   },
   "Gallery": {
+    "cak": "CakenPaken",
     "home": "Home",
     "gallery": "Gallery",
     "film": "Mountain Instant",
@@ -42,6 +45,8 @@
     "trail": "You won't regret tomorrow"
   },
   "Projects": {
+    "gallery": "Gallery",
+    "cak": "CakenPaken",
     "home": "Home",
     "projects": "Projects",
     "border": "Border of war",
@@ -59,6 +64,7 @@
     "titleT": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. Et sociis quam laoreet penatibus facilisi accumsan id at nulla. Iaculis tristique at ut turpis nibh."
   },
   "Support": {
+    "cak": "CakenPaken",
     "title": "support Ukraine in the war against Russia",
     "donation": "Donation",
     "circle": "Olympic Circle",
@@ -73,6 +79,7 @@
     "textPatreon1": "Basic support"
   },
   "Team": {
+    "cak": "CakenPaken",
     "team": "Crew",
     "joined": "people who joined the Cakenpaken",
     "Sopot": "Nazar Sopot",
