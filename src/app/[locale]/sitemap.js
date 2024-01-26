@@ -43,6 +43,12 @@ export default async function sitemap() {
       priority: 0.8,
     },
     {
+      url: 'https://www.cakenpaken.com/projects/mind',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://www.cakenpaken.com/gallery',
       lastModified: new Date(),
       changeFrequency: 'monthly',
