@@ -130,6 +130,7 @@ $large-screen: 1239px;
     height: auto;
   }
   @media (max-width: $small-screen) {
+    text-align: start;
     font-size: 18px;
     line-height: 22px; /* 122.222% */
     letter-spacing: -0.72px;
