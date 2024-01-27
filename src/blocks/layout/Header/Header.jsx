@@ -74,7 +74,7 @@ const Header = ({
         </div>
       </div>
       <div>
-        <Link href="/">
+        <Link href="/" aria-label="Logo">
           <svg
             className={styles.img}
             width="175"

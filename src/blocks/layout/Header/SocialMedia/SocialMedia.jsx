@@ -8,10 +8,10 @@ import styles from './SocialMedia.module.scss';
 
 const SocialMedia = () => {
   return (
-    <div>
+    <>
       <ul className={styles.list}>
         <li>
-          <Link href="mailto:pakencaken@gmail.com">
+          <Link aria-label="Social link" href="mailto:pakencaken@gmail.com">
             <Gmail />
           </Link>
         </li>
@@ -21,17 +21,23 @@ const SocialMedia = () => {
           </Link>
         </li> */}
         <li>
-          <Link href="https://www.instagram.com/cakenpaken/">
+          <Link
+            aria-label="Social link"
+            href="https://www.instagram.com/cakenpaken/"
+          >
             <Inst />
           </Link>
         </li>
         <li>
-          <Link href="https://www.youtube.com/@CAKENPAKEN">
+          <Link
+            aria-label="Social link"
+            href="https://www.youtube.com/@CAKENPAKEN"
+          >
             <Youtube />
           </Link>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 
