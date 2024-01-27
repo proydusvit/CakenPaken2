@@ -22,10 +22,14 @@ $large-screen: 1239px;
     line-height: 30px;
     margin-bottom: 20px;
     letter-spacing: -1.12px;
+    text-align: center;
   }
 }
 .box {
   text-align: center;
+  @media (max-width: $small-screen) {
+    text-align: start;
+  }
 }
 
 .conception {

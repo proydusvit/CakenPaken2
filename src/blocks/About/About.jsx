@@ -5,17 +5,57 @@ import { useTranslations } from 'next-intl';
 import SliderComponent from '@/components/slider/SliderComponent';
 import { secondList, listItems } from './imgList';
 import foto from '@/assets/imgAbout/foto.jpg';
-
+import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
 const About = () => {
   const t = useTranslations('About');
+  const breadCrumbsJsonLD = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: '1',
+        item: {
+          '@id': `cakenpaken`,
+          name: t('home'),
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: '2',
+        item: {
+          '@id': `cakenpaken/about`,
+          name: t('about'),
+        },
+      },
+    ],
+  };
+
+  const breadCrumbsList = [
+    {
+      link: '/',
+      text: t('home'),
+    },
+    {
+      link: '/about',
+      text: t('about'),
+    },
+  ];
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbsJsonLD) }}
+        key="breadcrumbs-jsonld"
+      />
+
       <div className={styles.mainFoto}>
         <h1> {t('about')}</h1>
       </div>
 
       <SectionSecond className={styles.section}>
+        <BreadCrumbs list={breadCrumbsList} />
         <h2 className={styles.section__caken}> {t('caken')}</h2>
 
         <SliderComponent list={secondList} />

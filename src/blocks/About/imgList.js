@@ -2,9 +2,9 @@ import foto2 from '@/assets/imgAbout/foto2.jpg';
 import foto1 from '@/assets/imgAbout/foto1.jpg';
 import foto3 from '@/assets/imgAbout/foto3.jpg';
 
-import main3 from '@/assets/imgAbout/main3.jpg';
-import main1 from '@/assets/imgAbout/main1.jpg';
-import main2 from '@/assets/imgAbout/main2.jpg';
+import main3 from '@/assets/imgAbout/main3.webp';
+import main1 from '@/assets/imgAbout/main1.webp';
+import main2 from '@/assets/imgAbout/main2.webp';
 
 export const listItems = [
   {

@@ -2,20 +2,20 @@
 $small-screen: 767px;
 $medium-screen: 768px;
 $large-screen: 1239px;
-.section {
-  width: 1240px;
-  margin: 0 auto;
-  padding: 150px 15px 200px;
-  @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    width: 100vw;
-    padding: 130px 100px;
-  }
+// .section {
+//   width: 1240px;
+//   margin: 0 auto;
+//   padding: 150px 15px 200px;
+//   @media (min-width: $medium-screen) and (max-width: $large-screen) {
+//     width: 100vw;
+//     padding: 130px 100px;
+//   }
 
-  @media (max-width: $small-screen) {
-    width: 100vw;
-    padding: 140px 0 100px;
-  }
-}
+//   @media (max-width: $small-screen) {
+//     width: 100vw;
+//     padding: 140px 0 100px;
+//   }
+// }
 .title {
   font-size: 100px;
 
@@ -52,12 +52,13 @@ $large-screen: 1239px;
   background-image: url('../../assets/imgGallery/Category/film.webp');
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     height: 285px;
-    width: 285px;
+    width: 50%;
   }
   @media (max-width: $small-screen) {
-    padding: 0 -22px;
-    width: 100%;
+    width: 120%;
     height: 305px;
+    margin-left: -22px;
+    margin-right: -22px;
   }
 
   @include backFoto;
@@ -66,8 +67,6 @@ $large-screen: 1239px;
 .section__link {
   display: flex;
   flex-wrap: wrap;
-
-  margin-bottom: 50px;
 }
 .name {
   color: #fefefe;

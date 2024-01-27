@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import styles from './Category.module.scss';
+import Section from '@/components/Section/Section';
 
 import { Link } from '@/navigation';
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
@@ -47,7 +48,8 @@ const Category = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbsJsonLD) }}
         key="breadcrumbs-jsonld"
       />
-      <section className={styles.section}>
+
+      <Section>
         <BreadCrumbs list={breadCrumbsList} />
         <h1 className={styles.title}> {t('gallery')}</h1>
 
@@ -70,7 +72,7 @@ const Category = () => {
             <h3 className={styles.name}>{t('border')}</h3>
           </Link>
         </div>
-      </section>
+      </Section>
     </>
   );
 };
