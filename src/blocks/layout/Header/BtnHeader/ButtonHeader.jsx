@@ -28,6 +28,7 @@ const ButtonHeader = ({ handleClick, isClicked }) => {
       <button
         className={`${styles.button} ${isClicked ? styles.clicked : ''}`}
         onClick={handleClick}
+        aria-label="Btn Header"
       >
         <span className={styles.line}></span>
         <span className={styles.line}></span>
