@@ -53,18 +53,22 @@ const Projects = () => {
         <Link
           className={styles.category}
           href="/projects/mountain_instant"
+          aria-label="mountain_instant"
         ></Link>
         <Link
           className={`${styles.category} ${styles.category_two}`}
           href="/projects/trail"
+          aria-label="trail"
         ></Link>
         <Link
           className={`${styles.category} ${styles.category_three}`}
           href="/projects/edge_of_war"
+          aria-label="edge_of_war"
         ></Link>
         <Link
           className={`${styles.category} ${styles.category_mind}`}
           href="/projects/mind"
+          aria-label="mind"
         ></Link>
       </Section>
     </>

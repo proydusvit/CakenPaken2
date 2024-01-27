@@ -55,21 +55,21 @@ const Category = () => {
 
         <div className={styles.section__link}>
           <Link className={styles.links} href="gallery/mountain_instant">
-            <h3 className={styles.name}>{t('film')}</h3>
+            <span className={styles.name}>{t('film')}</span>
           </Link>
 
           <Link
             className={`${styles.trail} ${styles.links}`}
             href="gallery/trail"
           >
-            <h3 className={styles.name}>{t('trail')}</h3>
+            <span className={styles.name}>{t('trail')}</span>
           </Link>
 
           <Link
             className={`${styles.border} ${styles.links}`}
             href="gallery/edge_of_war"
           >
-            <h3 className={styles.name}>{t('border')}</h3>
+            <span className={styles.name}>{t('border')}</span>
           </Link>
         </div>
       </Section>
