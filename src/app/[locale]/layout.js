@@ -66,11 +66,32 @@ export default function LocaleLayout({ children, params }) {
           name="google-site-verification"
           content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"
         />
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           async
+        /> */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
         />
+
+        <link
+          rel="stylesheet"
+          media="print"
+          onload="this.onload=null;this.removeAttribute('media');"
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+        />
+
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+          />
+        </noscript>
 
         {/* <link
           rel="stylesheet"
