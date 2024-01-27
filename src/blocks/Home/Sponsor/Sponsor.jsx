@@ -21,7 +21,7 @@ const SponsorAndHelp = () => {
         <ul className={styles.list}>
           {listItems.map(({ id, img, alt, href, width, height }) => (
             <li key={id}>
-              <Link href={href}>
+              <Link href={href} aria-label="Sponsor link">
                 <Image
                   className={styles.img}
                   src={img}
