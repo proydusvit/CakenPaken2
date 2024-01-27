@@ -64,14 +64,10 @@ const Trail = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbsJsonLD) }}
         key="breadcrumbs-jsonld"
       />
-      {/* <div className={styles.mainFoto}></div> */}
+
 
       <Section>
-        {/* <BackLink
-          link={'/projects'}
-          back={t('projects')}
-          current={t('trail')}
-        /> */}
+   
         <BreadCrumbs list={breadCrumbsList} />
         <div className={styles.box}>
           <h1 className={styles.name}>{t('trail')}</h1>

@@ -72,18 +72,7 @@ export default async function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
-    {
-      url: 'https://www.cakenpaken.com/gallery/shop',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.2,
-    },
-    {
-      url: 'https://www.cakenpaken.com/gallery/events',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.2,
-    },
+
     {
       url: 'https://www.cakenpaken.com/support',
       lastModified: new Date(),
@@ -91,7 +80,7 @@ export default async function sitemap() {
       priority: 0.5,
     },
     {
-      url: 'https://www.cakenpaken.com/gallery/donate',
+      url: 'https://www.cakenpaken.com/donate',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,

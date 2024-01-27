@@ -58,10 +58,10 @@ export default function LocaleLayout({ children, params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
           key="website-jsonld"
         />
-        <meta property="og:title" content="Link preview title" />
+        {/* <meta property="og:title" content="Link preview title" />
         <meta property="og:image" content="Link preview image URL" />
         <meta property="og:description" content="Link preview description" />
-        <meta property="og:url" content="Canonical link preview URL" />
+        <meta property="og:url" content="Canonical link preview URL" /> */}
         <meta
           name="google-site-verification"
           content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"
