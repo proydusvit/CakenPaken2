@@ -172,7 +172,7 @@ $large-screen: 1239px;
 }
 .developers {
   display: grid;
-  font-size: 12px;
+  font-size: 14px;
 
   justify-items: end;
   font-weight: 400;
@@ -184,13 +184,14 @@ $large-screen: 1239px;
     margin-bottom: 10px;
   }
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    font-size: 12px;
+    font-size: 15px;
     justify-items: center;
     line-height: 14px;
 
     letter-spacing: -0.48px;
   }
   @media (max-width: $small-screen) {
+    font-size: 18px;
     justify-items: center;
   }
 }

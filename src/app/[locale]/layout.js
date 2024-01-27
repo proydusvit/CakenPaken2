@@ -66,16 +66,12 @@ export default function LocaleLayout({ children, params }) {
           name="google-site-verification"
           content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+          async
         />
+
         {/* <link
           rel="stylesheet"
           type="text/css"
