@@ -13,7 +13,7 @@ $large-screen: 1239px;
     @media (min-width: $medium-screen) and (max-width: $large-screen) {
       display: flex;
       align-items: center;
-      margin-right: 0;
+      margin-right: 30px;
     }
   }
   > li:last-child {
@@ -57,13 +57,27 @@ $large-screen: 1239px;
     text-transform: uppercase;
   }
 }
-.img {
+.idlo {
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    width: 70%;
-    height: 70%;
+    width: 120px;
+    height: 42px;
   }
-  @media (max-width: $small-screen) {
-    width: 70%;
-    height: 70%;
+}
+.gorgany {
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    width: 120px;
+    height: 36px;
+  }
+}
+.snow {
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    width: 120px;
+    height: 46px;
+  }
+}
+.objerky {
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    width: 120px;
+    height: 33px;
   }
 }

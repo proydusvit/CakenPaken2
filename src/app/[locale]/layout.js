@@ -71,7 +71,11 @@ export default function LocaleLayout({ children, params }) {
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           async
         /> */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
 
         <link
           rel="preload"
