@@ -3,7 +3,12 @@
   width: 100%;
   height: 777px;
   background: black;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../assets/imgGallery/Trail/img2.webp");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../../../assets/imgGallery/Trail/img2.webp');
   background-size: cover;
   background-position: 50% 50%;
   display: flex;
@@ -43,4 +48,4 @@
   .mainFoto {
     height: 399.722px;
   }
-}/*# sourceMappingURL=Trail.module.css.map */
+} /*# sourceMappingURL=Trail.module.css.map */

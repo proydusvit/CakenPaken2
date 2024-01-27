@@ -65,9 +65,7 @@ const Trail = () => {
         key="breadcrumbs-jsonld"
       />
 
-
       <Section>
-   
         <BreadCrumbs list={breadCrumbsList} />
         <div className={styles.box}>
           <h1 className={styles.name}>{t('trail')}</h1>
@@ -78,7 +76,6 @@ const Trail = () => {
 
           <VideoPlayer videoId={youtubeVideoId} />
 
-          
           <SliderComponent list={listSlider} />
 
           <div className={styles.parent}>

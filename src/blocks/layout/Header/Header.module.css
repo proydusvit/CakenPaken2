@@ -121,7 +121,8 @@
     font-size: 26px;
   }
 }
-.link:hover, .link:focus {
+.link:hover,
+.link:focus {
   font-weight: 700;
 }
 
@@ -190,4 +191,4 @@
   .linkDisabled {
     font-size: 26px;
   }
-}/*# sourceMappingURL=Header.module.css.map */
+} /*# sourceMappingURL=Header.module.css.map */
