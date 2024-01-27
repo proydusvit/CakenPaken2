@@ -33,7 +33,7 @@ export const listItems = [
 export const secondList = [
   {
     id: 1,
-    img: main1,
+    img: main3,
     alt: 'foto',
     width: 344,
     height: 443,
@@ -47,7 +47,7 @@ export const secondList = [
   },
   {
     id: 3,
-    img: main3,
+    img: main1,
     alt: 'foto3',
     width: 344,
     height: 443,
