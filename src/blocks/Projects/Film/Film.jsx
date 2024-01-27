@@ -74,7 +74,18 @@ const Film = () => {
 
           <h2 className={styles.conception}>{t('textF')}</h2>
 
-          <VideoPlayer videoId={youtubeVideoId} />
+          <div className={styles.video}>
+            <iframe
+              className={styles.frame}
+              width="1065"
+              height="550"
+              src={`https://www.youtube.com/embed/ElKO3_Ovxgw?si=4i7EY7ezUIERFOHK`}
+              title="Гірська мить"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              frameBorder={0}
+              allowFullScreen
+            ></iframe>
+          </div>
 
           <p className={styles.title}>{t('title')}</p>
           <SliderComponent list={listItems} />
