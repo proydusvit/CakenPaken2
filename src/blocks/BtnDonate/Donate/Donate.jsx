@@ -28,7 +28,7 @@ const DonateCaken = () => {
               />
             </div>
             <div className={style.found}>
-              <h3 className={style.found_title}>{t(item.title)}</h3>
+              <h2 className={style.found_title}>{t(item.title)}</h2>
               <ul className={style.found_list}>
                 <li className={style.found_text}>{t('textPatreon')}</li>
                 <li className={style.found_text}>{t('textPatreon1')}</li>

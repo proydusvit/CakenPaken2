@@ -29,7 +29,7 @@ const SupportUkraine = () => {
               />
             </div>
             <div className={style.found}>
-              <h3 className={style.found_title}>{t(item.title)}</h3>
+              <h2 className={style.found_title}>{t(item.title)}</h2>
 
               <p className={style.found_text}>{t('textFund')}</p>
 
