@@ -79,7 +79,7 @@ export default function LocaleLayout({ children, params }) {
         <link
           rel="stylesheet"
           media="print"
-          onLoad="this.onload=null;this.removeAttribute('media');"
+          // onLoad="this.onload=null;this.removeAttribute('media');"
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
         />
 
