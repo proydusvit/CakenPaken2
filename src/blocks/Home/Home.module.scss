@@ -13,7 +13,10 @@ $large-screen: 1239px;
     display: block;
   }
 }
-
+.svgbox {
+  position: relative;
+  z-index: 14;
+}
 .content {
   padding-top: 350px;
   color: getColor('white-for-text');
@@ -108,6 +111,10 @@ $large-screen: 1239px;
 .text {
   position: relative;
   z-index: 2;
+}
+.texts {
+  position: relative;
+  z-index: -2;
 }
 .img {
   position: absolute;
