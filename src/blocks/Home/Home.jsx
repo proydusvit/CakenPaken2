@@ -59,7 +59,7 @@ const Home = () => {
   );
 };
 
-// export default Home;
+export default Home;
 // import { Link } from '@/navigation';
 // import { useTranslations } from 'next-intl';
 // import styles from './Home.module.scss';
