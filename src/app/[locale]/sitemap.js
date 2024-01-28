@@ -1,7 +1,7 @@
 export default async function sitemap() {
   return [
     {
-      url: 'https://www.cakenpaken.com/uk',
+      url: 'https://www.cakenpaken.com/uk/',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
@@ -86,7 +86,7 @@ export default async function sitemap() {
       priority: 0.5,
     },
     {
-      url: 'https://www.cakenpaken.com/en',
+      url: 'https://www.cakenpaken.com/en/',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
