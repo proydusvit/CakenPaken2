@@ -11,6 +11,7 @@ import bombar from '../../assets/imgTeam/crew/bombar.png';
 import diana from '../../assets/imgTeam/crew/diana.jpg';
 import kate from '../../assets/imgTeam/crew/kate.jpg';
 import vlad from '../../assets/imgTeam/crew/vlad.jpg';
+import cheban from '../../assets/imgTeam/crew/cheban.webp';
 
 export const listTeam = [
   {
@@ -93,5 +94,11 @@ export const listTeamTwo = [
     img: vlad,
     name: 'Vlad',
     social: 'https://linktr.ee/proidysvit7',
+  },
+  {
+    id: 4,
+    img: cheban,
+    name: 'Cheban',
+    social: 'https://linktr.ee/olympian_1',
   },
 ];

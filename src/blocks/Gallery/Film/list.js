@@ -22,12 +22,18 @@ import img20 from '@/assets/imgGallery/Film/img20.webp';
 import img21 from '@/assets/imgGallery/Film/img21.webp';
 import img22 from '@/assets/imgGallery/Film/img22.webp';
 import img23 from '@/assets/imgGallery/Film/img23.webp';
-import img24 from '@/assets/imgGallery/Film/img24.webp';
+
 import img25 from '@/assets/imgGallery/Film/img25.webp';
 import img26 from '@/assets/imgGallery/Film/img26.webp';
 import img27 from '@/assets/imgGallery/Film/img27.webp';
 import img28 from '@/assets/imgGallery/Film/img28.webp';
 import img29 from '@/assets/imgGallery/Film/img29.webp';
+import img30 from '@/assets/imgGallery/Film/img30.webp';
+import img31 from '@/assets/imgGallery/Film/img31.webp';
+import img32 from '@/assets/imgGallery/Film/img32.webp';
+import img33 from '@/assets/imgGallery/Film/img33.webp';
+import img34 from '@/assets/imgGallery/Film/img34.webp';
+import img35 from '@/assets/imgGallery/Film/img35.webp';
 
 export const listFilm = [
   {
@@ -125,7 +131,7 @@ export const listFilm = [
   },
   {
     id: 25,
-    img: img24,
+    img: img31,
   },
   {
     id: 24,
@@ -147,5 +153,22 @@ export const listFilm = [
   {
     id: 28,
     img: img29,
+  },
+  {
+    id: 30,
+    img: img30,
+  },
+
+  {
+    id: 32,
+    img: img32,
+  },
+  {
+    id: 33,
+    img: img33,
+  },
+  {
+    id: 34,
+    img: img34,
   },
 ];
