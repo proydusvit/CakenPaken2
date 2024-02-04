@@ -33,7 +33,11 @@ const DonateCaken = () => {
                 <li className={style.found_text}>{t('textPatreon')}</li>
                 <li className={style.found_text}>{t('textPatreon1')}</li>
               </ul>
-              <Link className={style.found_link} href={item.link}>
+              <Link
+                rel="canonical"
+                className={style.found_link}
+                href={item.link}
+              >
                 {t('suppotteam')}
               </Link>
             </div>

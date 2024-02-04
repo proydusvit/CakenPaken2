@@ -54,11 +54,16 @@ const Category = () => {
         <h1 className={styles.title}> {t('gallery')}</h1>
 
         <div className={styles.section__link}>
-          <Link className={styles.links} href="gallery/mountain_instant">
+          <Link
+            rel="canonical"
+            className={styles.links}
+            href="gallery/mountain_instant"
+          >
             <span className={styles.name}>{t('film')}</span>
           </Link>
 
           <Link
+            rel="canonical"
             className={`${styles.trail} ${styles.links}`}
             href="gallery/trail"
           >
@@ -66,6 +71,7 @@ const Category = () => {
           </Link>
 
           <Link
+            rel="canonical"
             className={`${styles.border} ${styles.links}`}
             href="gallery/edge_of_war"
           >

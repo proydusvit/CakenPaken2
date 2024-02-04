@@ -24,7 +24,12 @@ const Home = () => {
   return (
     <section>
       <div className={styles.box}>
-        <Link loading="lazy" href="/projects" className={styles.content}>
+        <Link
+          rel="canonical"
+          loading="lazy"
+          href="/projects"
+          className={styles.content}
+        >
           <span className={styles.text}>{t('projects')}</span>
           <Image
             src={Prod}
@@ -54,7 +59,12 @@ const Home = () => {
           />
         </div>
 
-        <Link className={styles.projects} href="/gallery" loading="lazy">
+        <Link
+          rel="canonical"
+          className={styles.projects}
+          href="/gallery"
+          loading="lazy"
+        >
           <span className={styles.text}>{t('gallery')}</span>
           <Image
             src={Gallery}
@@ -66,6 +76,7 @@ const Home = () => {
         </Link>
         <Help />
         <Link
+          rel="canonical"
           loading="lazy"
           href="/team"
           className={`${styles.content} ${styles.content_img__crew} `}
@@ -80,7 +91,12 @@ const Home = () => {
           />
         </Link>
 
-        <Link loading="lazy" href="/about" className={styles.content}>
+        <Link
+          rel="canonical"
+          loading="lazy"
+          href="/about"
+          className={styles.content}
+        >
           <span className={styles.text}>{t('about')}</span>
           <Image
             src={About}

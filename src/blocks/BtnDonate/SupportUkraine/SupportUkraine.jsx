@@ -33,7 +33,11 @@ const SupportUkraine = () => {
 
               <p className={style.found_text}>{t('textFund')}</p>
 
-              <Link className={style.found_link} href={item.link}>
+              <Link
+                rel="canonical"
+                className={style.found_link}
+                href={item.link}
+              >
                 {t('donate')}
               </Link>
             </div>
