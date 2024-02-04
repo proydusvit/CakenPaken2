@@ -9,7 +9,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/blocks/layout/Footer/Footer';
 import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
-
+import { GoogleAnalytics } from '@next/third-parties/google';
 export const metadata = {
   title: 'CakenPaken',
   description: 'CakenPaken',
@@ -82,7 +82,10 @@ export default function LocaleLayout({ children, params }) {
           // onLoad="this.onload=null;this.removeAttribute('media');"
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
         />
-
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dzrjsjo7z/image/upload/v1706289851/rkhnc0xe3c2b7fnzgf6o.jpg"
+        />
         <noscript>
           <link
             rel="stylesheet"
@@ -106,7 +109,7 @@ export default function LocaleLayout({ children, params }) {
         <main>{children}</main>
         <Footer />
         <Analytics />
-
+        <GoogleAnalytics gaId="G-3LJC7W91KP" />
         <SpeedInsights />
       </body>
     </html>
