@@ -11,10 +11,10 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.footer_box}>
         <div className={styles.box}>
-          <Link href="/about" className={styles.link}>
+          <Link rel="canonical" href="/about" className={styles.link}>
             {t('about')}
           </Link>
-          <Link href="/projects" className={styles.link}>
+          <Link rel="canonical" href="/projects" className={styles.link}>
             {t('projects')}
           </Link>
           <Link

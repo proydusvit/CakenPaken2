@@ -51,21 +51,25 @@ const Projects = () => {
         <h1 className={styles.name}>{t('projects')}</h1>
 
         <Link
+          rel="canonical"
           className={styles.category}
           href="/projects/mountain_instant"
           aria-label="mountain_instant"
         ></Link>
         <Link
+          rel="canonical"
           className={`${styles.category} ${styles.category_two}`}
           href="/projects/trail"
           aria-label="trail"
         ></Link>
         <Link
+          rel="canonical"
           className={`${styles.category} ${styles.category_three}`}
           href="/projects/edge_of_war"
           aria-label="edge_of_war"
         ></Link>
         <Link
+          rel="canonical"
           className={`${styles.category} ${styles.category_mind}`}
           href="/projects/mind"
           aria-label="mind"

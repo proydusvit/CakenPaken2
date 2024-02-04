@@ -17,6 +17,7 @@ const Navigation = ({
       <ul className={styles.list}>
         <li className={styles.item}>
           <Link
+            rel="canonical"
             href="/projects"
             className={`${styles.link} ${
               pathname === '/projects' ? styles.active : ''
@@ -34,6 +35,7 @@ const Navigation = ({
         </li>
         <li className={styles.item}>
           <Link
+            rel="canonical"
             href="/about"
             className={`${styles.link} ${
               pathname === '/about' ? styles.active : ''
@@ -45,6 +47,7 @@ const Navigation = ({
         </li>
         <li className={styles.item}>
           <Link
+            rel="canonical"
             href="/team"
             className={`${styles.link} ${
               pathname === '/team' ? styles.active : ''
@@ -57,6 +60,7 @@ const Navigation = ({
 
         <li className={styles.item}>
           <Link
+            rel="canonical"
             href="/gallery"
             className={`${styles.link} ${
               pathname === '/gallery' ? styles.active : ''
