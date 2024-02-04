@@ -9,7 +9,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/blocks/layout/Footer/Footer';
 import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
-import { GoogleAnalytics } from '@next/third-parties/google';
+
 export const metadata = {
   title: 'CakenPaken',
   description: 'CakenPaken',
@@ -66,12 +66,12 @@ export default function LocaleLayout({ children, params }) {
         <link rel="canonical" href="https://www.cakenpaken.com" />
         <link
           rel="alternate"
-          hreflang="en-US"
+          hrefLang="en-US"
           href="https://www.cakenpaken.com/en-EN"
         />
         <link
           rel="alternate"
-          hreflang="de-DE"
+          hrefLang="de-DE"
           href="https://www.cakenpaken.com/uk-UK"
         />
         <link
@@ -119,7 +119,7 @@ export default function LocaleLayout({ children, params }) {
         <main>{children}</main>
         <Footer />
         <Analytics />
-        <GoogleAnalytics gaId="G-3LJC7W91KP" />
+
         <SpeedInsights />
       </body>
     </html>
