@@ -10,6 +10,14 @@ import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/blocks/layout/Footer/Footer';
 import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+};
 export const metadata = {
   title: 'CakenPaken',
   description: 'CakenPaken',
