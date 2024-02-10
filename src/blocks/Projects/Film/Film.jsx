@@ -82,7 +82,6 @@ const Film = () => {
               src={`https://www.youtube.com/embed/ElKO3_Ovxgw?si=4i7EY7ezUIERFOHK`}
               title="Гірська мить"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              frameBorder={0}
               allowFullScreen
               loading="lazy"
             ></iframe>

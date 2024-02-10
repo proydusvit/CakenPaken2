@@ -74,7 +74,7 @@ const Mind = () => {
 
           <h2 className={styles.conception}>{t('textM')}</h2>
 
-          <VideoPlayer videoId={youtubeVideoId} />
+          <VideoPlayer videoId={youtubeVideoId} title={t('mind')} />
 
           <SliderComponent list={listItems} />
           <ul className={styles.list}>

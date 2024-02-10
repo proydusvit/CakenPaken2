@@ -72,7 +72,7 @@ const EdgeOfWar = () => {
             <h2 className={styles.conception__text}>{t('textB')}</h2>
           </div>
 
-          <VideoPlayer videoId={youtubeVideoId} />
+          <VideoPlayer videoId={youtubeVideoId} title={t('border')} />
 
           <p className={styles.title}>{t('titleB')}</p>
           <SliderComponent list={listItems} />

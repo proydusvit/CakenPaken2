@@ -1,6 +1,6 @@
 import styles from './Video.module.scss'; // Стилі для компонента
 
-const VideoPlayer = ({ videoId }) => {
+const VideoPlayer = ({ videoId, title }) => {
   return (
     <div className={styles.video}>
       <iframe
@@ -8,9 +8,8 @@ const VideoPlayer = ({ videoId }) => {
         width="1065"
         height="550"
         src={`https://www.youtube.com/embed/${videoId}`}
-        title="Завтра не пожалієш"
+        title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        frameBorder={0}
         loading="lazy"
         allowFullScreen
       ></iframe>

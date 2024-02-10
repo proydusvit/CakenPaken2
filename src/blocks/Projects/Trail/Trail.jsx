@@ -74,7 +74,7 @@ const Trail = () => {
             <h2 className={styles.conception__text}>{t('textT')}</h2>
           </div>
 
-          <VideoPlayer videoId={youtubeVideoId} />
+          <VideoPlayer videoId={youtubeVideoId} title={t('trail')} />
 
           <SliderComponent list={listSlider} />
 
