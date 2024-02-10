@@ -4,7 +4,7 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    host: 'https://www.cakenpaken.com/',
-    sitemap: 'https://www.cakenpaken.com/sitemap.xml',
+    host: 'https://www.cakenpaken.com/uk',
+    sitemap: 'https://www.cakenpaken.com/uk/sitemap.xml',
   };
 }
