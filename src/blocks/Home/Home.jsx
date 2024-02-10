@@ -55,12 +55,7 @@ const Home = () => {
           />
         </div>
 
-        <Link
-          rel="canonical"
-          className={styles.projects}
-          href="/gallery"
-          loading="lazy"
-        >
+        <Link rel="canonical" className={styles.projects} href="/gallery">
           <span className={styles.text}>{t('gallery')}</span>
           <Image
             src={Gallery}
