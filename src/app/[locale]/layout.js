@@ -12,8 +12,8 @@ import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
 
 export const viewport = {
   width: 'device-width',
-  initialScale: 1,
-  maximumScale: 1,
+  initialScale: 5,
+  maximumScale: 5,
   userScalable: true,
   // Also supported by less commonly used
   // interactiveWidget: 'resizes-visual',
