@@ -66,11 +66,11 @@ export default function LocaleLayout({ children, params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
           key="website-jsonld"
         />
-
         <meta
           name="google-site-verification"
           content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"
         />
+        <meta name="googlebot" content="index" />
         {/* <link rel="canonical" href="https://www.cakenpaken.com" /> */}
         <link
           rel="alternate"
@@ -87,20 +87,17 @@ export default function LocaleLayout({ children, params }) {
           href="https://fonts.gstatic.com"
           // crossOrigin="true"
         />
-
         <link
           rel="preload"
           as="style"
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
         />
-
         <link
           rel="stylesheet"
           media="print"
           // onLoad="this.onload=null;this.removeAttribute('media');"
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
         />
-
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
