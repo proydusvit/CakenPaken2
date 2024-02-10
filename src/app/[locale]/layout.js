@@ -14,7 +14,7 @@ export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false,
+  // userScalable: false,
   // Also supported by less commonly used
   // interactiveWidget: 'resizes-visual',
 };
@@ -85,7 +85,7 @@ export default function LocaleLayout({ children, params }) {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin="true"
+          // crossOrigin="true"
         />
 
         <link
@@ -100,6 +100,8 @@ export default function LocaleLayout({ children, params }) {
           // onLoad="this.onload=null;this.removeAttribute('media');"
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
         />
+
+        <meta property="og:type" content="website" />
         <meta
           property="og:image"
           content="https://res.cloudinary.com/dzrjsjo7z/image/upload/v1706289851/rkhnc0xe3c2b7fnzgf6o.jpg"

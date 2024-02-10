@@ -23,13 +23,9 @@ const Home = () => {
 
   return (
     <section>
+      <h1 className={styles.caken}>{t('cak')}</h1>
       <div className={styles.box}>
-        <Link
-          rel="canonical"
-          loading="lazy"
-          href="/projects"
-          className={styles.content}
-        >
+        <Link rel="canonical" href="/projects" className={styles.content}>
           <span className={styles.text}>{t('projects')}</span>
           <Image
             src={Prod}
@@ -39,7 +35,7 @@ const Home = () => {
             alt="Projects"
           />
         </Link>
-        <div className={styles.content} loading="lazy">
+        <div className={styles.content}>
           <div
             className={styles.svgbox}
             // style={{ zIndex: '222', position: 'relative' }}
@@ -77,7 +73,6 @@ const Home = () => {
         <Help />
         <Link
           rel="canonical"
-          loading="lazy"
           href="/team"
           className={`${styles.content} ${styles.content_img__crew} `}
         >
@@ -91,12 +86,7 @@ const Home = () => {
           />
         </Link>
 
-        <Link
-          rel="canonical"
-          loading="lazy"
-          href="/about"
-          className={styles.content}
-        >
+        <Link rel="canonical" href="/about" className={styles.content}>
           <span className={styles.text}>{t('about')}</span>
           <Image
             src={About}
