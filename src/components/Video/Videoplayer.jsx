@@ -11,7 +11,6 @@ const VideoPlayer = ({ videoId, title }) => {
         title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         loading="lazy"
-        allowFullScreen
       ></iframe>
     </div>
   );
