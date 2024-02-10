@@ -72,6 +72,7 @@ const SupportUkraine = () => {
                 <p className={style.found_text}>{t('textFund')}</p>
 
                 <Link
+                  target="_blank"
                   rel="canonical"
                   className={style.found_link}
                   href={item.link}

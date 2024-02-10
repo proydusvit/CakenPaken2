@@ -74,6 +74,7 @@ const DonateCaken = () => {
                   <li className={style.found_text}>{t('textPatreon1')}</li>
                 </ul>
                 <Link
+                  target="_blank"
                   rel="canonical"
                   className={style.found_link}
                   href={item.link}

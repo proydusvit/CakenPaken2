@@ -11,7 +11,11 @@ const SocialMedia = () => {
     <>
       <ul className={styles.list}>
         <li>
-          <Link aria-label="Social link" href="mailto:pakencaken@gmail.com">
+          <Link
+            target="_blank"
+            aria-label="Social link"
+            href="mailto:pakencaken@gmail.com"
+          >
             <Gmail />
           </Link>
         </li>
@@ -22,6 +26,7 @@ const SocialMedia = () => {
         </li> */}
         <li>
           <Link
+            target="_blank"
             aria-label="Social link"
             href="https://www.instagram.com/cakenpaken/"
           >
@@ -30,6 +35,7 @@ const SocialMedia = () => {
         </li>
         <li>
           <Link
+            target="_blank"
             aria-label="Social link"
             href="https://www.youtube.com/@CAKENPAKEN"
           >

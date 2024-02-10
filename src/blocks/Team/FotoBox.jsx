@@ -19,7 +19,7 @@ const FotoBox = ({ list }) => {
               height={403}
             />
             <p className={styles.memberName}>{t(item.name)}</p>
-            <a className={styles.memberLink} href={item.social}>
+            <a className={styles.memberLink} target="_blank" href={item.social}>
               <Linktre />
             </a>
           </li>

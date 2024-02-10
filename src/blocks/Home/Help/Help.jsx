@@ -14,6 +14,7 @@ const Help = () => {
       <p>{t('donateU')}</p>
       <div>
         <Link
+          target="_blank"
           rel="canonical"
           href="https://olympiccircle.org.ua/pro-nas/rekvizyty.html"
           className={styles.donate__fond}

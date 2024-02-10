@@ -24,7 +24,7 @@ const SponsorAndHelp = () => {
 
         <ul className={styles.list}>
           <li>
-            <Link href="https://iidlo.com/" aria-label="Idlo">
+            <Link target="_blank" href="https://iidlo.com/" aria-label="Idlo">
               <Image
                 className={styles.idlo}
                 src={Idlo}
@@ -35,7 +35,11 @@ const SponsorAndHelp = () => {
             </Link>
           </li>
           <li>
-            <Link href="https://www.gorgany.com/" aria-label="Gorgany">
+            <Link
+              target="_blank"
+              href="https://www.gorgany.com/"
+              aria-label="Gorgany"
+            >
               <Image
                 className={styles.gorgany}
                 src={Gorgany}
@@ -46,7 +50,11 @@ const SponsorAndHelp = () => {
             </Link>
           </li>
           <li>
-            <Link href="https://objerky.com/en" aria-label="Objerky">
+            <Link
+              target="_blank"
+              href="https://objerky.com/en"
+              aria-label="Objerky"
+            >
               <Image
                 className={styles.objerky}
                 src={Objerky}
@@ -57,7 +65,11 @@ const SponsorAndHelp = () => {
             </Link>
           </li>
           <li>
-            <Link href="https://www.snowstuff.com.ua/" aria-label="Snow">
+            <Link
+              target="_blank"
+              href="https://www.snowstuff.com.ua/"
+              aria-label="Snow"
+            >
               <Image
                 className={styles.snow}
                 src={Snow}

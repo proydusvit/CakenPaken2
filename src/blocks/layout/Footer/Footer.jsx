@@ -18,12 +18,14 @@ const Footer = () => {
             {t('projects')}
           </Link>
           <Link
+            target="_blank"
             href="https://www.youtube.com/@CAKENPAKEN"
             className={styles.link}
           >
             YouTube
           </Link>
           <Link
+            target="_blank"
             href="https://www.instagram.com/cakenpaken/"
             className={styles.link}
           >
@@ -38,14 +40,18 @@ const Footer = () => {
             <p className={styles.develop_conact_text}>{t('open')}</p>
             <p className={styles.develop_mail}>{t('contactus')}</p>
             <span className={styles.develop_span}>
-              <Link href="mailto:pakencaken@gmail.com">
+              <Link target="_blank" href="mailto:pakencaken@gmail.com">
                 pakencaken@gmail.com
               </Link>
             </span>
           </div>
           <div className={styles.developers}>
-            <Link href="https://linktr.ee/tsymbrivskaa">{t('design')}</Link>
-            <Link href="https://linktr.ee/proidysvit7">{t('develop')}</Link>
+            <Link target="_blank" href="https://linktr.ee/tsymbrivskaa">
+              {t('design')}
+            </Link>
+            <Link target="_blank" href="https://linktr.ee/proidysvit7">
+              {t('develop')}
+            </Link>
             <p>2023</p>
           </div>
         </div>
