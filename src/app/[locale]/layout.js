@@ -71,7 +71,7 @@ export default function LocaleLayout({ children, params }) {
           name="google-site-verification"
           content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"
         />
-        <link rel="canonical" href="https://www.cakenpaken.com" />
+        {/* <link rel="canonical" href="https://www.cakenpaken.com" /> */}
         <link
           rel="alternate"
           hrefLang="en-US"
