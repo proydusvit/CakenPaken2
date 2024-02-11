@@ -71,7 +71,7 @@ export default function LocaleLayout({ children, params }) {
           content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"
         />
         <meta name="googlebot" content="index" />
-        {/* <link rel="canonical" href="https://www.cakenpaken.com" /> */}
+        <link rel="canonical" href="https://www.cakenpaken.com" />
         <link
           rel="alternate"
           hrefLang="en-US"

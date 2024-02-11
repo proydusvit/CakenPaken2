@@ -6,6 +6,9 @@ export async function generateMetadata({ params: { locale } }) {
   return {
     title: ` ${t('film')} | ${t('cak')}`,
     description: ` ${t('film')} | ${t('gallery')} | ${t('cak')}`,
+    alternates: {
+      canonical: 'https://www.cakenpaken.com/gallery/mountain_instant',
+    },
     openGraph: {
       title: ` ${t('film')} | ${t('cak')}`,
       description: ` ${t('film')} | ${t('gallery')} | ${t('cak')}`,

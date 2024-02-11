@@ -5,6 +5,9 @@ export async function generateMetadata({ params: { locale } }) {
   return {
     title: ` ${t('gallery')} | ${t('cak')}`,
     description: ` ${t('gallery')} | ${t('cak')}`,
+    alternates: {
+      canonical: 'https://www.cakenpaken.com/gallery',
+    },
     openGraph: {
       title: ` ${t('gallery')} | ${t('cak')}`,
       description: ` ${t('gallery')} | ${t('cak')}`,

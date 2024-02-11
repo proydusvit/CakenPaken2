@@ -6,6 +6,9 @@ export async function generateMetadata({ params: { locale } }) {
   return {
     title: ` ${t('trail')} | ${t('cak')}`,
     description: ` ${t('trail')} | ${t('gallery')} | ${t('cak')}`,
+    alternates: {
+      canonical: 'https://www.cakenpaken.com/gallery/trail',
+    },
     openGraph: {
       title: ` ${t('trail')} ${t('cak')}`,
       description: ` ${t('trail')} | ${t('gallery')} | ${t('cak')}`,

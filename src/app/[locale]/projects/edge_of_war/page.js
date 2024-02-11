@@ -6,6 +6,9 @@ export async function generateMetadata({ params: { locale } }) {
   return {
     title: ` ${t('border')} | ${t('cak')}`,
     description: ` ${t('border')} | ${t('cak')}`,
+    alternates: {
+      canonical: 'https://www.cakenpaken.com/projects/edge_of_war',
+    },
     openGraph: {
       title: ` ${t('border')} | ${t('cak')}`,
       description: ` ${t('border')} | ${t('cak')}`,
