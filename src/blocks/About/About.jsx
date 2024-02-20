@@ -24,7 +24,7 @@ const About = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `about`,
+          '@id': `/about`,
           name: t('about'),
         },
       },

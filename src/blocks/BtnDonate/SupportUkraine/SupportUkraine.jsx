@@ -15,7 +15,7 @@ const SupportUkraine = () => {
         '@type': 'ListItem',
         position: '1',
         item: {
-          '@id': `cakenpaken`,
+          '@id': `/`,
           name: t('home'),
         },
       },
@@ -23,7 +23,7 @@ const SupportUkraine = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `cakenpaken/support`,
+          '@id': `/support`,
           name: t('title'),
         },
       },
@@ -49,10 +49,6 @@ const SupportUkraine = () => {
       <Section>
         <BreadCrumbs list={breadCrumbsList} />
         <h1 className={style.title}>{t('title')}</h1>
-        {/* <div className={style.donate}>
-        <h2 className={style.donate_title}>{t('donation')}</h2>
-        <p className={style.donate_text}>{t('textdonat')}</p>
-      </div> */}
 
         <ul className={style.fund}>
           {listItems.map(item => (

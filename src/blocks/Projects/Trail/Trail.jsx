@@ -21,7 +21,7 @@ const Trail = () => {
         '@type': 'ListItem',
         position: '1',
         item: {
-          '@id': `cakenpaken`,
+          '@id': `/`,
           name: t('home'),
         },
       },
@@ -29,7 +29,7 @@ const Trail = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `cakenpaken/projects`,
+          '@id': `/projects`,
           name: t('projects'),
         },
       },
@@ -37,7 +37,7 @@ const Trail = () => {
         '@type': 'ListItem',
         position: '3',
         item: {
-          '@id': `cakenpaken/projects/trail`,
+          '@id': `/projects/trail`,
           name: t('trail'),
         },
       },

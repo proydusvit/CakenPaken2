@@ -6,13 +6,11 @@ import { listItems } from './fotoMList';
 import Image from 'next/image';
 
 import SliderComponent from '@/components/slider/SliderComponent';
-import VideoPlayer from '@/components/Video/Videoplayer';
+
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
 
 const Film = () => {
   const t = useTranslations('Projects');
-
-  const youtubeVideoId = 'ElKO3_Ovxgw?si=4i7EY7ezUIERFOHK';
 
   const breadCrumbsJsonLD = {
     '@context': 'https://schema.org',
@@ -22,7 +20,7 @@ const Film = () => {
         '@type': 'ListItem',
         position: '1',
         item: {
-          '@id': `cakenpaken`,
+          '@id': `/`,
           name: t('home'),
         },
       },
@@ -30,7 +28,7 @@ const Film = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `cakenpaken/projects`,
+          '@id': `/projects`,
           name: t('projects'),
         },
       },
@@ -38,7 +36,7 @@ const Film = () => {
         '@type': 'ListItem',
         position: '3',
         item: {
-          '@id': `cakenpaken/projects/mountain_instant`,
+          '@id': `/projects/mountain_instant`,
           name: t('film'),
         },
       },

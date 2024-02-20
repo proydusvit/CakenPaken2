@@ -16,7 +16,7 @@ const EdgeOfWar = () => {
         '@type': 'ListItem',
         position: '1',
         item: {
-          '@id': `cakenpaken`,
+          '@id': `/`,
           name: t('home'),
         },
       },
@@ -24,7 +24,7 @@ const EdgeOfWar = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `cakenpaken/gallery`,
+          '@id': `/gallery`,
           name: t('gallery'),
         },
       },
@@ -32,7 +32,7 @@ const EdgeOfWar = () => {
         '@type': 'ListItem',
         position: '3',
         item: {
-          '@id': `cakenpaken/gallery/edge_of_war`,
+          '@id': `/gallery/edge_of_war`,
           name: t('border'),
         },
       },
@@ -48,7 +48,7 @@ const EdgeOfWar = () => {
       text: t('gallery'),
     },
     {
-      link: '/gallery/edge_of_wa',
+      link: '/gallery/edge_of_war',
       text: t('border'),
     },
   ];

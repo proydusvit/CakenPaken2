@@ -16,7 +16,7 @@ const DonateCaken = () => {
         '@type': 'ListItem',
         position: '1',
         item: {
-          '@id': `cakenpaken`,
+          '@id': `/`,
           name: t('home'),
         },
       },
@@ -24,7 +24,7 @@ const DonateCaken = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `cakenpaken/donate`,
+          '@id': `/donate`,
           name: t('supportcaken'),
         },
       },

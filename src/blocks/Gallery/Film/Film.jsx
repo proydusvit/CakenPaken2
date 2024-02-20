@@ -16,7 +16,7 @@ const GalleryFilm = () => {
         '@type': 'ListItem',
         position: '1',
         item: {
-          '@id': `cakenpaken`,
+          '@id': `/`,
           name: t('home'),
         },
       },
@@ -24,7 +24,7 @@ const GalleryFilm = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `cakenpaken/gallery`,
+          '@id': `/gallery`,
           name: t('gallery'),
         },
       },
@@ -32,7 +32,7 @@ const GalleryFilm = () => {
         '@type': 'ListItem',
         position: '3',
         item: {
-          '@id': `cakenpaken/gallery/film`,
+          '@id': `/gallery/mountain_instant`,
           name: t('film'),
         },
       },
@@ -48,7 +48,7 @@ const GalleryFilm = () => {
       text: t('gallery'),
     },
     {
-      link: '/gallery/film',
+      link: '/gallery/mountain_instant',
       text: t('film'),
     },
   ];

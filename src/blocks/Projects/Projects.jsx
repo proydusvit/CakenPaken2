@@ -22,7 +22,7 @@ const Projects = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `projects`,
+          '@id': `/projects`,
           name: t('projects'),
         },
       },
