@@ -39,8 +39,20 @@ const Team = () => {
       text: t('team'),
     },
   ];
+  const websiteJsonLd = {
+    '@context': 'https://schema.org/',
+    '@type': 'WebSite',
+    name: t('team'),
+    description: 'Ми команда ЦакенПакена',
+    url: 'https://www.cakenpaken.com/team',
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        key="website-jsonld"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbsJsonLD) }}

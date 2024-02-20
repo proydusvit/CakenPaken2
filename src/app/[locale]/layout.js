@@ -49,6 +49,7 @@ export default function LocaleLayout({ children, params }) {
     '@context': 'https://schema.org/',
     '@type': 'WebSite',
     name: 'CakenPaken',
+
     url: 'https://www.cakenpaken.com/',
   };
 
