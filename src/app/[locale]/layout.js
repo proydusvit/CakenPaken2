@@ -45,13 +45,13 @@ export default function LocaleLayout({ children, params }) {
   const locale = useLocale();
   const t = useTranslations('Common');
 
-  const websiteJsonLd = {
-    '@context': 'https://schema.org/',
-    '@type': 'WebSite',
-    name: 'CakenPaken',
+  // const websiteJsonLd = {
+  //   '@context': 'https://schema.org/',
+  //   '@type': 'WebSite',
+  //   name: 'CakenPaken',
 
-    url: 'https://www.cakenpaken.com/',
-  };
+  //   url: 'https://www.cakenpaken.com/',
+  // };
 
   if (params.locale !== locale) {
     notFound();
@@ -59,11 +59,11 @@ export default function LocaleLayout({ children, params }) {
   return (
     <html lang={locale}>
       <head>
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
           key="website-jsonld"
-        />
+        /> */}
         <meta
           name="google-site-verification"
           content="Oj3W6yNvEyIBpdkspMFsIineMFPdMQiVK3Hr-eeZasg"
