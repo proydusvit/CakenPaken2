@@ -15,14 +15,11 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: true,
-  // Also supported by less commonly used
-  // interactiveWidget: 'resizes-visual',
 };
 export const metadata = {
   title: 'CakenPaken',
   description: 'CakenPaken',
-  // viewport:
-  //   'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no',
+
   icons: [
     {
       rel: 'icon',
@@ -82,11 +79,7 @@ export default function LocaleLayout({ children, params }) {
           hrefLang="de-DE"
           href="https://www.cakenpaken.com/uk-UK"
         />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          // crossOrigin="true"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           rel="preload"
           as="style"
@@ -95,12 +88,15 @@ export default function LocaleLayout({ children, params }) {
         <link
           rel="stylesheet"
           media="print"
-          // onLoad="this.onload=null;this.removeAttribute('media');"
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
+          content="https://res.cloudinary.com/dzrjsjo7z/image/upload/v1706289851/rkhnc0xe3c2b7fnzgf6o.jpg"
+        />
+        <meta
+          name="twitter:image"
           content="https://res.cloudinary.com/dzrjsjo7z/image/upload/v1706289851/rkhnc0xe3c2b7fnzgf6o.jpg"
         />
         <noscript>
