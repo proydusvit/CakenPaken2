@@ -24,7 +24,7 @@ const GalleryTrail = () => {
         '@type': 'ListItem',
         position: '2',
         item: {
-          '@id': `gallery`,
+          '@id': `/gallery`,
           name: t('gallery'),
         },
       },
@@ -32,7 +32,7 @@ const GalleryTrail = () => {
         '@type': 'ListItem',
         position: '3',
         item: {
-          '@id': `gallery/trail`,
+          '@id': `/trail`,
           name: t('trail'),
         },
       },
