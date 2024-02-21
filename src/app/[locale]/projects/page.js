@@ -22,8 +22,8 @@ export async function generateMetadata({ params: { locale } }) {
 const websiteJsonLd = {
   '@context': 'https://schema.org/',
   '@type': 'WebSite',
-  name: t('projects'),
-  description: t('projects'),
+  name: 'Проєкти',
+  description: 'Проєкти',
   url: 'https://www.cakenpaken.com/projects',
 };
 const Projects = () => {
