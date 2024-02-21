@@ -38,13 +38,7 @@ const Projects = () => {
       text: t('projects'),
     },
   ];
-  const websiteJsonLd = {
-    '@context': 'https://schema.org/',
-    '@type': 'WebSite',
-    name: t('projects'),
-    description: t('projects'),
-    url: 'https://www.cakenpaken.com/projects',
-  };
+
   return (
     <>
       <script
@@ -52,11 +46,7 @@ const Projects = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbsJsonLD) }}
         key="breadcrumbs-jsonld"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        key="website-jsonld"
-      />
+
       <Section>
         <BreadCrumbs list={breadCrumbsList} />
         <h1 className={styles.name}>{t('projects')}</h1>

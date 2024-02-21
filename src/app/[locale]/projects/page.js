@@ -19,8 +19,24 @@ export async function generateMetadata({ params: { locale } }) {
     },
   };
 }
+const websiteJsonLd = {
+  '@context': 'https://schema.org/',
+  '@type': 'WebSite',
+  name: t('projects'),
+  description: t('projects'),
+  url: 'https://www.cakenpaken.com/projects',
+};
 const Projects = () => {
-  return <Project />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        key="website-jsonld"
+      />
+      <Project />
+    </>
+  );
 };
 
 export default Projects;

@@ -21,7 +21,11 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 const Trail = () => {
-  return <TrailR />;
+  return (
+    <>
+      <TrailR />
+    </>
+  );
 };
 
 export default Trail;
