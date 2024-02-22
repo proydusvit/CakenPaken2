@@ -170,5 +170,17 @@ export default async function sitemap() {
 
       priority: 0.5,
     },
+    {
+      url: 'https://www.cakenpaken.com/uk/events',
+      lastModified: new Date(),
+
+      priority: 0.5,
+    },
+    {
+      url: 'https://www.cakenpaken.com/en/events',
+      lastModified: new Date(),
+
+      priority: 0.5,
+    },
   ];
 }

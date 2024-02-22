@@ -1,0 +1,92 @@
+$small-screen: 767px;
+$medium-screen: 768px;
+$large-screen: 1239px;
+.title {
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+
+  margin-bottom: 100px;
+
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 28px;
+
+    line-height: 32px;
+    letter-spacing: -1.12px;
+
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  @media (max-width: $small-screen) {
+    font-size: 28px;
+
+    line-height: 32px;
+    letter-spacing: -1.12px;
+
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+.table_container {
+  margin: 0 auto;
+  overflow-x: auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  @media (max-width: $small-screen) {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+.box {
+  display: flex;
+  justify-content: center;
+}
+.table {
+  width: 90%;
+  border-collapse: collapse;
+  @media (max-width: $small-screen) {
+    table-layout: fixed; /* Встановіть фіксовану ширину для таблиці за замовчуванням */
+  }
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Забороніть перенос тексту для найменших екранів */
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: $small-screen) {
+  .table {
+    width: 750px;
+    overflow-x: auto;
+  }
+}
+.time {
+  width: 10%;
+  @media (max-width: $small-screen) {
+    .table {
+      width: 90px;
+    }
+  }
+}

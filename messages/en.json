@@ -99,5 +99,11 @@
     "Kate": "Kate Tsymbrivska",
     "Vlad": "Vlad Shestavetskyi",
     "Cheban": "Iurii Cheban"
+  },
+  "Events": {
+    "cak": "CakenPaken",
+    "home": "Home",
+    "events": "Events",
+    "Event": "\"Mountain Instant\" in cinema"
   }
 }

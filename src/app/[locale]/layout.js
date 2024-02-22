@@ -106,6 +106,7 @@ export default function LocaleLayout({ children, params }) {
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           />
         </noscript>
+     
       </head>
 
       <body>
