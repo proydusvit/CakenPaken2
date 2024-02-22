@@ -9,7 +9,8 @@
     "sponsors": "Спонсори",
     "donateU": "Підтримайте Україну",
     "donate": "Задонатити",
-    "support": "Підтримати Україну"
+    "support": "Підтримати Україну",
+    "kraud": "Долучитися до створення автентичної фотокниги \"Гірська мить\""
   },
   "About": {
     "home": "Головна",
@@ -79,7 +80,8 @@
     "patreon": "Патреон",
     "textdonat": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. ",
     "textPatreon": "Есклюзивний контент",
-    "textPatreon1": "Базова підтримка"
+    "textPatreon1": "Базова підтримка",
+    "kraund": "Краудфандинг \"Моє місто\""
   },
   "Team": {
     "home": "Головна",

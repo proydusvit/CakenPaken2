@@ -1,6 +1,6 @@
 import Patreon from '@/assets/imgDonate/patreon.png';
 import QrPatreon from '@/assets/imgDonate/qrpatreon.jpg';
-
+import Fand from '@/assets/imgDonate/fand.png';
 export const listItems = [
   {
     id: 1,
@@ -11,4 +11,13 @@ export const listItems = [
     width: 215,
     height: 206,
   },
+  // {
+  //   id: 2,
+  //   link: 'https://mycity.one/projects/caken-',
+  //   logo: Fand,
+  //   // qr: QrPatreon,
+  //   title: 'kraund',
+  //   width: 345,
+  //   height: 306,
+  // },
 ];

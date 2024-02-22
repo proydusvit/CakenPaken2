@@ -66,6 +66,7 @@ const Home = () => {
           />
         </Link>
         <Help />
+
         <Link
           rel="canonical"
           href="/team"
