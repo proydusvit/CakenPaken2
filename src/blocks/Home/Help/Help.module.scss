@@ -26,6 +26,7 @@ $large-screen: 1239px;
       margin-right: 10px;
       margin-left: 10px;
       width: 500px;
+      padding: 10px 0;
     }
     @media (max-width: $small-screen) {
       font-size: 13px;
@@ -38,6 +39,7 @@ $large-screen: 1239px;
       margin-right: 13px;
       margin-left: 10px;
       width: 300px;
+      padding: 5px 0;
     }
   }
 
