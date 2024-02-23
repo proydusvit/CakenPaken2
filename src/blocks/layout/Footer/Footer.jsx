@@ -52,7 +52,7 @@ const Footer = () => {
             <Link target="_blank" href="https://linktr.ee/proidysvit7">
               {t('develop')}
             </Link>
-            <p>2023</p>
+            <p>2024</p>
           </div>
         </div>
       </div>
