@@ -41,9 +41,9 @@ const Help = () => {
           <Image
             className={styles.img}
             src={Logo}
-            width={110}
-            height={80}
-            alt="help Ukraine"
+            width={75}
+            height={100}
+            alt="Book"
           />
         </Link>
       </div>

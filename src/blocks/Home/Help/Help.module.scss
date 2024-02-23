@@ -4,37 +4,40 @@ $large-screen: 1239px;
 
 .donate {
   width: 100%;
-  background: black;
+  background: white;
 
   > a {
-    color: white;
+    color: black;
     font-size: 24px;
     font-weight: 600;
-    line-height: 28px; /* 116.667% */
+    line-height: 28px;
     letter-spacing: -0.96px;
     text-transform: uppercase;
     margin-right: 30px;
+    text-decoration-line: underline;
     @media (min-width: $medium-screen) and (max-width: $large-screen) {
       font-size: 22px;
+
       padding: 8px 0;
       font-weight: 400;
-      line-height: 23.2px; /* 105.455% */
+      line-height: 23.2px;
       font-variant: small-caps;
       letter-spacing: -0.88px;
       margin-right: 10px;
       margin-left: 10px;
-      width: 450px;
+      width: 500px;
     }
     @media (max-width: $small-screen) {
       font-size: 20px;
       padding: 20px 0;
       font-weight: 400;
-      line-height: 35px; /* 140% */
+
+      line-height: 35px;
       font-variant: small-caps;
       letter-spacing: -1px;
       margin-right: 5px;
       margin-left: 10px;
-      width: 70%;
+      width: 300px;
     }
   }
 
