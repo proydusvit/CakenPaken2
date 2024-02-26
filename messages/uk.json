@@ -26,7 +26,7 @@
   "Common": {
     "cak": "ЦакенПакен",
     "donate": "Підтримай Команду",
-    "support": "Задонатити",
+    "support": "Підтримай Україну",
     "events": "Події",
     "about": "Про нас",
     "shop": "Магазин",
@@ -73,12 +73,12 @@
     "donation": "Донати",
     "circle": "Олімпійське коло",
 
-    "donate": "Підтримай Україну",
+    "donate": "Задонатити",
     "textFund": "Благодійний фонд «Олімпійське коло» офіційно заснований 25 травня 2022 року. Організація, створена спортсменами для допомоги Миколаєвщині у боротьбі з російськими окупантами. Ми розпочали свою роботу як волонтери з перших днів, а потім вирішили об’єднати зусилля в «Олімпійське коло», тому що ми як спортсмени розуміємо, що тільки командна робота буде успішною.",
     "supportcaken": "Підтримай CakenPaken",
     "suppotteam": "Підтримай команду",
     "patreon": "Патреон",
-
+    "textdonat": "Lorem ipsum dolor sit amet consectetur. Nunc rhoncus lectus nisl commodo morbi amet amet. Lacus est quis leo consectetur. Suspendisse id dictumst eu quis mattis risus morbi sed id. ",
     "textPatreon": "Есклюзивний контент",
     "textPatreon1": "Базова підтримка",
     "kraund": "Краудфандинг \"Моє місто\""
