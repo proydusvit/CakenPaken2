@@ -72,7 +72,11 @@ const Mind = () => {
         <div className={styles.box}>
           <h1 className={styles.name}>{t('mind')}</h1>
 
-          <h2 className={styles.conception}>{t('textM')}</h2>
+          <div className={styles.conception}>
+            <h2 className={styles.conception__text}>{t('textM')}</h2>
+          </div>
+
+          {/* <h2 className={styles.conceptions}>{t('textM')}</h2> */}
 
           <VideoPlayer videoId={youtubeVideoId} title={t('mind')} />
 

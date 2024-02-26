@@ -5,35 +5,41 @@ $medium-screen: 768px;
 $large-screen: 1239px;
 
 .conception {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+
   margin-bottom: 100px;
-  width: 1166px;
-  white-space: pre-line;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: -1.44px;
 
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px; /* 122.222% */
-    letter-spacing: -0.72px;
     display: block;
-    width: 75vw;
   }
 
   @media (max-width: $small-screen) {
-    width: 85vw;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.56px;
     display: block;
     margin-bottom: 50px;
   }
+
+  &__text {
+    width: 1166px;
+    white-space: pre-line;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2.44px;
+
+    @media (min-width: $medium-screen) and (max-width: $large-screen) {
+      width: 75vw;
+    }
+
+    @media (max-width: $small-screen) {
+      width: 85vw;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.56px;
+    }
+  }
 }
+
 .list {
   display: flex;
   justify-content: space-between;
