@@ -9,12 +9,12 @@ export async function generateMetadata({ params: { locale } }) {
     title: t('cak'),
     description: t('cak'),
     alternates: {
-      canonical: 'https://www.cakenpaken.com/',
+      canonical: 'https://www.cakenpaken.com',
     },
     openGraph: {
       title: t('cak'),
       description: t('cak'),
-      url: `www.cakenpaken/`,
+      url: `www.cakenpaken.com`,
       siteName: 'CakenPaken',
       images: [
         {
