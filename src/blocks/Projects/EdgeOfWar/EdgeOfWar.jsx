@@ -85,8 +85,8 @@ const EdgeOfWar = () => {
                     className={styles.img}
                     src={img}
                     alt={alt}
-                    // width={width}
-                    // height={height}
+                    width={1000}
+                    height={550}
                   />
                 </li>
               ))}

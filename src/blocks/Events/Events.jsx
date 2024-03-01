@@ -72,7 +72,7 @@ const Table = ({ data }) => {
       </div>
       <SliderComponent list={listItems} />
       <ul className={styles.list}>
-        {listItems.map(({ id, img, alt, width, heigth }) => (
+        {listItems.map(({ id, img, alt }) => (
           <li key={id}>
             <Image
               className={styles.img}
