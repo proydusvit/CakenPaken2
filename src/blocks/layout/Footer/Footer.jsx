@@ -8,7 +8,7 @@ const Footer = () => {
   const t = useTranslations('Common');
 
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.footer_box}>
         <div className={styles.box}>
           <Link rel="canonical" href="/about" className={styles.link}>
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
