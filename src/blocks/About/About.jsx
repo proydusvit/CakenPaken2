@@ -142,7 +142,17 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
           className={styles.list}
         >
           {listItems.map(({ img, id, alt }) => (
-            <div key={id} className={styles.list__item}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                delay: 0.5,
+                ease: 'easeInOut',
+              }}
+              key={id}
+              className={styles.list__item}
+            >
               <Image
                 className={styles.list__img}
                 src={img}
@@ -150,7 +160,7 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
                 width={400}
                 height={400}
               />
-            </div>
+            </motion.div>
           ))}
         </motion.div>
       </SectionSecond>

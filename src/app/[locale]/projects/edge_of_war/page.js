@@ -1,5 +1,6 @@
 import BorderWar from '@/blocks/Projects/EdgeOfWar/EdgeOfWar';
 import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Projects' });
 
@@ -21,7 +22,16 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 const EdgeOfWar = () => {
-  return <BorderWar />;
+  const t = useTranslations('Projects');
+  return (
+    <BorderWar
+      projects={t('projects')}
+      home={t('home')}
+      border={t('border')}
+      textB={t('textB')}
+      titleB={t('titleB')}
+    />
+  );
 };
 
 export default EdgeOfWar;

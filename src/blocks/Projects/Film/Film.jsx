@@ -119,13 +119,23 @@ const Film = ({ title, textF, film, home, projects }) => {
             <ul className={styles.list}>
               {listItems.map(({ id, img, alt }) => (
                 <li key={id}>
-                  <Image
-                    className={styles.img}
-                    src={img}
-                    alt={alt}
-                    width={390}
-                    height={380}
-                  />
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.5,
+                      ease: 'easeInOut',
+                    }}
+                  >
+                    <Image
+                      className={styles.img}
+                      src={img}
+                      alt={alt}
+                      width={390}
+                      height={380}
+                    />
+                  </motion.div>
                 </li>
               ))}
             </ul>

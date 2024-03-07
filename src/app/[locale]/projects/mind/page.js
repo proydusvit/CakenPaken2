@@ -1,5 +1,6 @@
 import Mindproj from '@/blocks/Projects/Mind/Mind';
 import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Projects' });
   return {
@@ -20,7 +21,16 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 const Mind = () => {
-  return <Mindproj />;
+  const t = useTranslations('Projects');
+  return (
+    <Mindproj
+      home={t('home')}
+      projects={t('projects')}
+      mindS={t('mindS')}
+      mind={t('mind')}
+      textM={t('textM')}
+    />
+  );
 };
 
 export default Mind;

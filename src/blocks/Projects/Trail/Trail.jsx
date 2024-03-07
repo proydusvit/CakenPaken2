@@ -1,7 +1,7 @@
-import { useTranslations } from 'next-intl';
+'use client';
 import styles from './Trail.module.scss';
 import Section from '@/components/Section/Section';
-
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
 import SliderComponent from '@/components/slider/SliderComponent';
@@ -9,8 +9,7 @@ import SliderComponent from '@/components/slider/SliderComponent';
 import { listItems, listSlider } from './fotoList';
 import VideoPlayer from '@/components/Video/Videoplayer';
 
-const Trail = () => {
-  const t = useTranslations('Projects');
+const Trail = ({ home, projects, textT, trail }) => {
   const youtubeVideoId = 'rTUaPPWdUgM?si=lEHMBiT71USE5uuS';
 
   const breadCrumbsJsonLD = {
@@ -22,7 +21,7 @@ const Trail = () => {
         position: '1',
         item: {
           '@id': `/`,
-          name: t('home'),
+          name: home,
         },
       },
       {
@@ -30,7 +29,7 @@ const Trail = () => {
         position: '2',
         item: {
           '@id': `/projects`,
-          name: t('projects'),
+          name: projects,
         },
       },
       {
@@ -38,7 +37,7 @@ const Trail = () => {
         position: '3',
         item: {
           '@id': `/projects/trail`,
-          name: t('trail'),
+          name: trail,
         },
       },
     ],
@@ -46,15 +45,15 @@ const Trail = () => {
   const breadCrumbsList = [
     {
       link: '/',
-      text: t('home'),
+      text: home,
     },
     {
       link: '/projects',
-      text: t('projects'),
+      text: projects,
     },
     {
       link: '/projects/trail',
-      text: t('trail'),
+      text: trail,
     },
   ];
   return (
@@ -68,17 +67,41 @@ const Trail = () => {
       <Section>
         <BreadCrumbs list={breadCrumbsList} />
         <div className={styles.box}>
-          <h1 className={styles.name}>{t('trail')}</h1>
-
-          <div className={styles.conception}>
-            <h2 className={styles.conception__text}>{t('textT')}</h2>
-          </div>
-
-          <VideoPlayer videoId={youtubeVideoId} title={t('trail')} />
-
-          <SliderComponent list={listSlider} />
-
-          <div className={styles.parent}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          >
+            <h1 className={styles.name}>{trail}</h1>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            className={styles.conception}
+          >
+            <h2 className={styles.conception__text}>{textT}</h2>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}
+          >
+            <VideoPlayer videoId={youtubeVideoId} title={trail} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          >
+            <SliderComponent list={listSlider} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            className={styles.parent}
+          >
             <ul className={styles.list}>
               {listItems.map(({ id, img, alt, width, height }, index) => (
                 <li
@@ -91,17 +114,27 @@ const Trail = () => {
                         : styles.div3
                   }
                 >
-                  <Image
-                    className={styles.img}
-                    src={img}
-                    alt={alt}
-                    width={width}
-                    height={height}
-                  />
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.5,
+                      ease: 'easeInOut',
+                    }}
+                  >
+                    <Image
+                      className={styles.img}
+                      src={img}
+                      alt={alt}
+                      width={width}
+                      height={height}
+                    />
+                  </motion.div>
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </div>
       </Section>
     </>
