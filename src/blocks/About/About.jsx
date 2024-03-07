@@ -63,9 +63,14 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
       <SectionSecond className={styles.section}>
         <BreadCrumbs list={breadCrumbsList} />
         <h2 className={styles.section__caken}> {caken}</h2>
-
-        <SliderComponent list={secondList} />
-
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+          className={styles.mainFoto}
+        >
+          <SliderComponent list={secondList} />
+        </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
