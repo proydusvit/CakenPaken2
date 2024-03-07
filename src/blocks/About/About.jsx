@@ -1,13 +1,14 @@
+'use client';
 import styles from './About.module.scss';
 import Image from 'next/image';
 import SectionSecond from '@/components/Section/SectionSecond';
-import { useTranslations } from 'next-intl';
 import SliderComponent from '@/components/slider/SliderComponent';
 import { secondList, listItems } from './imgList';
 import foto from '@/assets/imgAbout/foto.jpg';
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
-const About = () => {
-  const t = useTranslations('About');
+import { motion } from 'framer-motion';
+
+const About = ({ home, about, caken, weare, yes, no, style }) => {
   const breadCrumbsJsonLD = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -17,7 +18,7 @@ const About = () => {
         position: '1',
         item: {
           '@id': `/`,
-          name: t('home'),
+          name: home,
         },
       },
       {
@@ -25,7 +26,7 @@ const About = () => {
         position: '2',
         item: {
           '@id': `/about`,
-          name: t('about'),
+          name: about,
         },
       },
     ],
@@ -34,11 +35,11 @@ const About = () => {
   const breadCrumbsList = [
     {
       link: '/',
-      text: t('home'),
+      text: home,
     },
     {
       link: '/about',
-      text: t('about'),
+      text: about,
     },
   ];
 
@@ -50,17 +51,27 @@ const About = () => {
         key="breadcrumbs-jsonld"
       />
 
-      <div className={styles.mainFoto}>
-        <h1> {t('about')}</h1>
-      </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+        className={styles.mainFoto}
+      >
+        <h1> {about}</h1>
+      </motion.div>
 
       <SectionSecond className={styles.section}>
         <BreadCrumbs list={breadCrumbsList} />
-        <h2 className={styles.section__caken}> {t('caken')}</h2>
+        <h2 className={styles.section__caken}> {caken}</h2>
 
         <SliderComponent list={secondList} />
 
-        <div className={styles.section__list}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+          className={styles.section__list}
+        >
           {secondList.map(({ img, id, alt }) => (
             <div key={id}>
               <Image
@@ -72,11 +83,21 @@ const About = () => {
               />
             </div>
           ))}
-        </div>
-
-        <h3 className={styles.team__text}>{t('weare')}</h3>
-
-        <div className={styles.box}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+          className={styles.box}
+        >
+          <h3 className={styles.team__text}>{weare}</h3>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+          className={styles.box}
+        >
           <Image
             className={styles.box__foto}
             src={foto}
@@ -85,17 +106,32 @@ const About = () => {
             height={390}
           />
 
-          <div className={styles.box__box}>
-            <p className={styles.box__text}>{t('yes')}</p>
-            <p className={styles.box__text}>{t('no')}</p>
-          </div>
-        </div>
-
-        <h3 className={styles.minibox__text}>{t('style')}</h3>
-
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+            className={styles.box__box}
+          >
+            <p className={styles.box__text}>{yes}</p>
+            <p className={styles.box__text}>{no}</p>
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+          className={styles.box}
+        >
+          <h3 className={styles.minibox__text}>{style}</h3>
+        </motion.div>
         <SliderComponent list={listItems} />
 
-        <div className={styles.list}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+          className={styles.list}
+        >
           {listItems.map(({ img, id, alt }) => (
             <div key={id} className={styles.list__item}>
               <Image
@@ -107,7 +143,7 @@ const About = () => {
               />
             </div>
           ))}
-        </div>
+        </motion.div>
       </SectionSecond>
     </>
   );

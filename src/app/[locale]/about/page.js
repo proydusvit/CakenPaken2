@@ -1,5 +1,6 @@
 import AboutUs from '@/blocks/About/About';
 import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'About' });
 
@@ -21,7 +22,18 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 const About = () => {
-  return <AboutUs />;
+  const t = useTranslations('About');
+  return (
+    <AboutUs
+      home={t('home')}
+      about={t('about')}
+      caken={t('caken')}
+      weare={t('weare')}
+      yes={t('yes')}
+      no={t('no')}
+      style={t('style')}
+    />
+  );
 };
 
 export default About;

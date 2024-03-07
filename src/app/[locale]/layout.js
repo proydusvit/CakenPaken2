@@ -10,12 +10,14 @@ import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/blocks/layout/Footer/Footer';
 import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
 import ProgressBar from '@/components/ProgressBar/ProgressBar';
+
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
   userScalable: true,
 };
+
 export const metadata = {
   title: 'CakenPaken',
   description: 'CakenPaken',
