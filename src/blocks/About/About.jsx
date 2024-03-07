@@ -128,8 +128,13 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
         >
           <h3 className={styles.minibox__text}>{style}</h3>
         </motion.div>
-        <SliderComponent list={listItems} />
-
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+        >
+          <SliderComponent list={listItems} />
+        </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
