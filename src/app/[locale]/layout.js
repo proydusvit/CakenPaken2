@@ -9,7 +9,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/blocks/layout/Footer/Footer';
 import Support from '@/blocks/layout/SupportAndDonate/SupportAndDonate';
-
+import ProgressBar from '@/components/ProgressBar/ProgressBar';
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -106,10 +106,10 @@ export default function LocaleLayout({ children, params }) {
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           />
         </noscript>
-     
       </head>
 
       <body>
+        <ProgressBar />
         <Header
           projects={t('projects')}
           shop={t('shop')}
