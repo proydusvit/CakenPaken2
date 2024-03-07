@@ -1,6 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
 import styles from './Film.module.scss';
-
+import { motion } from 'framer-motion';
 import Section from '@/components/Section/Section';
 import { listItems } from './fotoMList';
 import Image from 'next/image';
@@ -9,9 +9,7 @@ import SliderComponent from '@/components/slider/SliderComponent';
 
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
 
-const Film = () => {
-  const t = useTranslations('Projects');
-
+const Film = ({ title, textF, film, home, projects }) => {
   const breadCrumbsJsonLD = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -21,7 +19,7 @@ const Film = () => {
         position: '1',
         item: {
           '@id': `/`,
-          name: t('home'),
+          name: home,
         },
       },
       {
@@ -29,7 +27,7 @@ const Film = () => {
         position: '2',
         item: {
           '@id': `/projects`,
-          name: t('projects'),
+          name: projects,
         },
       },
       {
@@ -37,7 +35,7 @@ const Film = () => {
         position: '3',
         item: {
           '@id': `/projects/mountain_instant`,
-          name: t('film'),
+          name: film,
         },
       },
     ],
@@ -45,15 +43,15 @@ const Film = () => {
   const breadCrumbsList = [
     {
       link: `/`,
-      text: t('home'),
+      text: home,
     },
     {
       link: `/projects`,
-      text: t('projects'),
+      text: projects,
     },
     {
       link: `/projects/mountain_instant`,
-      text: t('film'),
+      text: film,
     },
   ];
   return (
@@ -68,11 +66,27 @@ const Film = () => {
       <Section>
         <BreadCrumbs list={breadCrumbsList} />
         <div className={styles.box}>
-          <h1 className={styles.name}>{t('film')}</h1>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          >
+            <h1 className={styles.name}>{film}</h1>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          >
+            <h2 className={styles.conception}>{textF}</h2>
+          </motion.div>
 
-          <h2 className={styles.conception}>{t('textF')}</h2>
-
-          <div className={styles.video}>
+          <motion.div
+            className={styles.video}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}
+          >
             <iframe
               className={styles.frame}
               width="1065"
@@ -82,23 +96,40 @@ const Film = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               loading="lazy"
             ></iframe>
-          </div>
-
-          <p className={styles.title}>{t('title')}</p>
-          <SliderComponent list={listItems} />
-          <ul className={styles.list}>
-            {listItems.map(({ id, img, alt }) => (
-              <li key={id}>
-                <Image
-                  className={styles.img}
-                  src={img}
-                  alt={alt}
-                  width={390}
-                  height={380}
-                />
-              </li>
-            ))}
-          </ul>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          >
+            <p className={styles.title}>{title}</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          >
+            <SliderComponent list={listItems} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          >
+            <ul className={styles.list}>
+              {listItems.map(({ id, img, alt }) => (
+                <li key={id}>
+                  <Image
+                    className={styles.img}
+                    src={img}
+                    alt={alt}
+                    width={390}
+                    height={380}
+                  />
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         </div>
       </Section>
     </>

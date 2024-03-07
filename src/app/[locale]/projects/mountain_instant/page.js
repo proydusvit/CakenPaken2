@@ -1,5 +1,5 @@
 import Film from '@/blocks/Projects/Film/Film';
-
+import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Projects' });
@@ -28,7 +28,16 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 const Mountaininstant = () => {
-  return <Film />;
+  const t = useTranslations('Projects');
+  return (
+    <Film
+      projects={t('projects')}
+      home={t('home')}
+      film={t('film')}
+      textF={t('textF')}
+      title={t('title')}
+    />
+  );
 };
 
 export default Mountaininstant;

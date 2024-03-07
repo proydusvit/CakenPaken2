@@ -1,5 +1,6 @@
 import Project from '@/blocks/Projects/Projects';
 import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Projects' });
   return {
@@ -27,6 +28,7 @@ const websiteJsonLd = {
   url: 'https://www.cakenpaken.com/projects',
 };
 const Projects = () => {
+  const t = useTranslations('Projects');
   return (
     <>
       <script
@@ -34,7 +36,7 @@ const Projects = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         key="website-jsonld"
       />
-      <Project />
+      <Project home={t('home')} projects={t('projects')} />
     </>
   );
 };
