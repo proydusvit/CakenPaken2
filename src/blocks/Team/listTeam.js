@@ -76,29 +76,29 @@ export const listTeam = [
   },
 ];
 
-// export const listTeamTwo = [
-//   {
-//     id: 1,
-//     img: diana,
-//     name: 'Diana',
-//     social: 'https://linktr.ee/di.pchnk',
-//   },
-//   {
-//     id: 2,
-//     img: kate,
-//     name: 'Kate',
-//     social: 'https://linktr.ee/tsymbrivskaa',
-//   },
-//   {
-//     id: 3,
-//     img: vlad,
-//     name: 'Vlad',
-//     social: 'https://linktr.ee/proidysvit7',
-//   },
-//   {
-//     id: 4,
-//     img: cheban,
-//     name: 'Cheban',
-//     social: 'https://linktr.ee/olympian_1',
-//   },
-// ];
+export const listTeamTwo = [
+  {
+    id: 1,
+    img: diana,
+    name: 'Diana',
+    social: 'https://linktr.ee/di.pchnk',
+  },
+  {
+    id: 2,
+    img: kate,
+    name: 'Kate',
+    social: 'https://linktr.ee/tsymbrivskaa',
+  },
+  {
+    id: 3,
+    img: vlad,
+    name: 'Vlad',
+    social: 'https://linktr.ee/proidysvit7',
+  },
+  {
+    id: 4,
+    img: cheban,
+    name: 'Cheban',
+    social: 'https://linktr.ee/olympian_1',
+  },
+];

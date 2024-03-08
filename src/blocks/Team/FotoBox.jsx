@@ -1,20 +1,9 @@
 import styles from './Team.module.scss';
 import Image from 'next/image';
 import Linktre from '@/assets/imgTeam/linkSvg.jsx';
-
-const FotoBox = ({
-  list,
-  Bombar,
-  Arsen,
-  Kolisnyk,
-  Savchuk,
-  Yavych,
-  Meloy,
-  Natali,
-  Stas,
-  Sopot,
-  Chycha,
-}) => {
+import { useTranslations } from 'next-intl';
+const FotoBox = ({ list }) => {
+  const t = useTranslations('Team');
   return (
     <div className={styles.box}>
       <ul className={styles.list}>

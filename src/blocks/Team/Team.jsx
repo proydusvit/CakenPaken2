@@ -1,26 +1,12 @@
-'use client';
 import styles from './Team.module.scss';
-
-import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { listTeam, listTeamTwo } from './listTeam';
 import FotoBox from './FotoBox';
 import Section from '@/components/Section/Section';
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
-const Team = ({
-  teamt,
-  home,
-  joined,
-  Bombar,
-  Arsen,
-  Kolisnyk,
-  Savchuk,
-  Yavych,
-  Meloy,
-  Natali,
-  Stas,
-  Sopot,
-  Chycha,
-}) => {
+
+const Team = () => {
+  const t = useTranslations('Team');
   const breadCrumbsJsonLD = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -30,7 +16,7 @@ const Team = ({
         position: '1',
         item: {
           '@id': `/`,
-          name: home,
+          name: t('home'),
         },
       },
       {
@@ -38,7 +24,7 @@ const Team = ({
         position: '2',
         item: {
           '@id': `/team`,
-          name: teamt,
+          name: t('team'),
         },
       },
     ],
@@ -47,20 +33,21 @@ const Team = ({
   const breadCrumbsList = [
     {
       link: '/',
-      text: home,
+      text: t('home'),
     },
     {
       link: '/team',
-      text: teamt,
+      text: t('team'),
     },
   ];
   const websiteJsonLd = {
     '@context': 'https://schema.org/',
     '@type': 'WebSite',
-    name: teamt,
+    name: t('team'),
     description: 'Ми команда ЦакенПакена',
     url: 'https://www.cakenpaken.com/team',
   };
+
   return (
     <>
       <script
@@ -75,48 +62,24 @@ const Team = ({
       />
       <Section>
         <BreadCrumbs list={breadCrumbsList} />
-        <motion.div
+        <div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
         >
-          <h1 className={styles.title}>{teamt}</h1>
-        </motion.div>
+          <h1 className={styles.title}> {t('team')}</h1>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
-        >
-          <FotoBox
-            list={listTeam}
-            Bombar={Bombar}
-            Arsen={Arsen}
-            Kolisnyk={Kolisnyk}
-            Savchuk={Savchuk}
-            Yavych={Yavych}
-            Meloy={Meloy}
-            Natali={Natali}
-            Stas={Stas}
-            Sopot={Sopot}
-            Chycha={Chycha}
-          />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
-        >
-          <h2 className={styles.join}>{joined}</h2>
-        </motion.div>
+        <div>
+          <FotoBox list={listTeam} />
+        </div>
+        <div>
+          <h2 className={styles.join}>{t('joined')}</h2>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
-        >
-          {/* <FotoBox list={listTeamTwo} /> */}
-        </motion.div>
+        <div>
+          <FotoBox list={listTeamTwo} />
+        </div>
       </Section>
     </>
   );
