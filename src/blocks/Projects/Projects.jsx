@@ -54,14 +54,14 @@ const Projects = ({ home, projects }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
         >
           <h1 className={styles.name}>{projects}</h1>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
         >
           <Link
             rel="canonical"
@@ -73,7 +73,7 @@ const Projects = ({ home, projects }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
         >
           <Link
             rel="canonical"
@@ -85,7 +85,7 @@ const Projects = ({ home, projects }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
         >
           <Link
             rel="canonical"
@@ -97,7 +97,7 @@ const Projects = ({ home, projects }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
         >
           <Link
             rel="canonical"

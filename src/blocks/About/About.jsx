@@ -54,7 +54,7 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+        transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
         className={styles.mainFoto}
       >
         <h1> {about}</h1>
@@ -66,14 +66,14 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
         >
           <SliderComponent list={secondList} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           className={styles.section__list}
         >
           {secondList.map(({ img, id, alt }) => (
@@ -91,7 +91,7 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           className={styles.box}
         >
           <h3 className={styles.team__text}>{weare}</h3>
@@ -99,7 +99,7 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           className={styles.box}
         >
           <Image
@@ -113,7 +113,7 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
             className={styles.box__box}
           >
             <p className={styles.box__text}>{yes}</p>
@@ -123,7 +123,7 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           className={styles.box}
         >
           <h3 className={styles.minibox__text}>{style}</h3>
@@ -131,14 +131,14 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
         >
           <SliderComponent list={listItems} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           className={styles.list}
         >
           {listItems.map(({ img, id, alt }) => (
@@ -146,8 +146,8 @@ const About = ({ home, about, caken, weare, yes, no, style }) => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
-                duration: 0.5,
-                delay: 0.5,
+                duration: 0.3,
+                delay: 0.3,
                 ease: 'easeInOut',
               }}
               key={id}

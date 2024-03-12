@@ -70,14 +70,14 @@ const Trail = ({ home, projects, textT, trail }) => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           >
             <h1 className={styles.name}>{trail}</h1>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
             className={styles.conception}
           >
             <h2 className={styles.conception__text}>{textT}</h2>
@@ -92,14 +92,14 @@ const Trail = ({ home, projects, textT, trail }) => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           >
             <SliderComponent list={listSlider} />
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
             className={styles.parent}
           >
             <ul className={styles.list}>
@@ -118,8 +118,8 @@ const Trail = ({ home, projects, textT, trail }) => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{
-                      duration: 0.5,
-                      delay: 0.5,
+                      duration: 0.3,
+                      delay: 0.3,
                       ease: 'easeInOut',
                     }}
                   >

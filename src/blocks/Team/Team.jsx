@@ -62,11 +62,7 @@ const Team = () => {
       />
       <Section>
         <BreadCrumbs list={breadCrumbsList} />
-        <div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
-        >
+        <div>
           <h1 className={styles.title}> {t('team')}</h1>
         </div>
 

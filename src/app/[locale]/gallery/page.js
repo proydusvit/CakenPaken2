@@ -1,4 +1,5 @@
 import Category from '@/blocks/Gallery/Category';
+import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: 'Gallery' });
@@ -26,7 +27,17 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 const Gallery = () => {
-  return <Category />;
+  const t = useTranslations('Gallery');
+
+  return (
+    <Category
+      home={t('home')}
+      gallery={t('gallery')}
+      film={t('film')}
+      trail={t('trail')}
+      border={t('border')}
+    />
+  );
 };
 
 export default Gallery;

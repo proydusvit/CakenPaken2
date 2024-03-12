@@ -1,12 +1,11 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
 import styles from './Category.module.scss';
 import Section from '@/components/Section/Section';
-
+import { motion } from 'framer-motion';
 import { Link } from '@/navigation';
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
-const Category = () => {
-  const t = useTranslations('Gallery');
-
+const Category = ({ home, gallery, film, trail, border }) => {
   const breadCrumbsJsonLD = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -16,7 +15,7 @@ const Category = () => {
         position: '1',
         item: {
           '@id': `/`,
-          name: t('home'),
+          name: home,
         },
       },
       {
@@ -24,7 +23,7 @@ const Category = () => {
         position: '2',
         item: {
           '@id': `gallery`,
-          name: t('gallery'),
+          name: gallery,
         },
       },
     ],
@@ -33,11 +32,11 @@ const Category = () => {
   const breadCrumbsList = [
     {
       link: '/',
-      text: t('home'),
+      text: home,
     },
     {
       link: '/gallery',
-      text: t('gallery'),
+      text: gallery,
     },
   ];
 
@@ -51,32 +50,47 @@ const Category = () => {
 
       <Section>
         <BreadCrumbs list={breadCrumbsList} />
-        <h1 className={styles.title}> {t('gallery')}</h1>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
+        >
+          <h1 className={styles.title}> {gallery}</h1>
+        </motion.div>
 
         <div className={styles.section__link}>
-          <Link
-            rel="canonical"
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
             className={styles.links}
-            href="gallery/mountain_instant"
           >
-            <span className={styles.name}>{t('film')}</span>
-          </Link>
+            <Link rel="canonical" href="gallery/mountain_instant">
+              <span className={styles.name}>{film}</span>
+            </Link>
+          </motion.div>
 
-          <Link
-            rel="canonical"
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
             className={`${styles.trail} ${styles.links}`}
-            href="gallery/trail"
           >
-            <span className={styles.name}>{t('trail')}</span>
-          </Link>
+            <Link rel="canonical" href="gallery/trail">
+              <span className={styles.name}>{trail}</span>
+            </Link>
+          </motion.div>
 
-          <Link
-            rel="canonical"
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
             className={`${styles.border} ${styles.links}`}
-            href="gallery/edge_of_war"
           >
-            <span className={styles.name}>{t('border')}</span>
-          </Link>
+            <Link rel="canonical" href="gallery/edge_of_war">
+              <span className={styles.name}>{border}</span>
+            </Link>
+          </motion.div>
         </div>
       </Section>
     </>

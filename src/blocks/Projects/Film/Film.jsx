@@ -69,14 +69,14 @@ const Film = ({ title, textF, film, home, projects }) => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           >
             <h1 className={styles.name}>{film}</h1>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           >
             <h2 className={styles.conception}>{textF}</h2>
           </motion.div>
@@ -100,21 +100,21 @@ const Film = ({ title, textF, film, home, projects }) => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           >
             <p className={styles.title}>{title}</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           >
             <SliderComponent list={listItems} />
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
           >
             <ul className={styles.list}>
               {listItems.map(({ id, img, alt }) => (
@@ -123,8 +123,8 @@ const Film = ({ title, textF, film, home, projects }) => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{
-                      duration: 0.5,
-                      delay: 0.5,
+                      duration: 0.3,
+                      delay: 0.3,
                       ease: 'easeInOut',
                     }}
                   >
