@@ -59,38 +59,17 @@ const Category = ({ home, gallery, film, trail, border }) => {
         </motion.div>
 
         <div className={styles.section__link}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
-            className={styles.links}
-          >
-            <Link rel="canonical" href="gallery/mountain_instant">
-              <span className={styles.name}>{film}</span>
-            </Link>
-          </motion.div>
+          <Link rel="canonical" href="gallery/mountain_instant">
+            <span className={styles.name}>{film}</span>
+          </Link>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
-            className={`${styles.trail} ${styles.links}`}
-          >
-            <Link rel="canonical" href="gallery/trail">
-              <span className={styles.name}>{trail}</span>
-            </Link>
-          </motion.div>
+          <Link rel="canonical" href="gallery/trail">
+            <span className={styles.name}>{trail}</span>
+          </Link>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
-            className={`${styles.border} ${styles.links}`}
-          >
-            <Link rel="canonical" href="gallery/edge_of_war">
-              <span className={styles.name}>{border}</span>
-            </Link>
-          </motion.div>
+          <Link rel="canonical" href="gallery/edge_of_war">
+            <span className={styles.name}>{border}</span>
+          </Link>
         </div>
       </Section>
     </>
