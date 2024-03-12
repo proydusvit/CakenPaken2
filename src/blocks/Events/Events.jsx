@@ -1,12 +1,11 @@
+'use client';
 import styles from './Table.module.scss';
-import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
 import { BreadCrumbs } from '@/components/BreadCrumbs/BreadCrumbs';
 import { listItems } from './fotolist';
 import SliderComponent from '@/components/slider/SliderComponent';
 import Image from 'next/image';
-const Table = ({ data }) => {
-  const t = useTranslations('Events');
-
+const Table = ({ data, home, events, event }) => {
   const breadCrumbsJsonLD = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -16,7 +15,7 @@ const Table = ({ data }) => {
         position: '1',
         item: {
           '@id': `/`,
-          name: t('home'),
+          name: home,
         },
       },
       {
@@ -24,7 +23,7 @@ const Table = ({ data }) => {
         position: '2',
         item: {
           '@id': `/events`,
-          name: t('events'),
+          name: events,
         },
       },
     ],
@@ -32,11 +31,11 @@ const Table = ({ data }) => {
   const breadCrumbsList = [
     {
       link: `/`,
-      text: t('home'),
+      text: home,
     },
     {
       link: `/events`,
-      text: t('events'),
+      text: events,
     },
   ];
   return (
@@ -47,8 +46,20 @@ const Table = ({ data }) => {
         key="breadcrumbs-jsonld"
       />
       <BreadCrumbs list={breadCrumbsList} />
-      <h1 className={styles.title}>{t('Event')}</h1>
-      <div className={styles.table_container}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.2, delay: 0.2, ease: 'easeOut' }}
+      >
+        <h1 className={styles.title}>{event}</h1>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.2, delay: 0.2, ease: 'easeOut' }}
+        className={styles.table_container}
+      >
         <table className={styles.table}>
           <thead>
             <tr>
@@ -69,21 +80,36 @@ const Table = ({ data }) => {
             ))}
           </tbody>
         </table>
-      </div>
-      <SliderComponent list={listItems} />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.2, delay: 0.2, ease: 'easeOut' }}
+      >
+        <SliderComponent list={listItems} />
+      </motion.div>
+
       <ul className={styles.list}>
         {listItems.map(({ id, img, alt }) => (
           <li key={id}>
-            <Image
-              className={styles.img}
-              src={img}
-              alt={alt}
-              width={590}
-              height={350}
-            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.2, delay: 0.2, ease: 'easeOut' }}
+            >
+              <Image
+                className={styles.img}
+                src={img}
+                alt={alt}
+                width={590}
+                height={350}
+              />
+            </motion.div>
           </li>
         ))}
       </ul>
+
       <div className={styles.box}>
         <blockquote
           class="instagram-media"
@@ -370,6 +396,7 @@ const Table = ({ data }) => {
         </blockquote>
 
         <script async src="//www.instagram.com/embed.js"></script>
+
         <blockquote
           className="instagram-media"
           data-instgrm-captioned
