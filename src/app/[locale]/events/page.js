@@ -44,6 +44,12 @@ const Events = () => {
       time: '11:30',
       place: 'Планета Кіно (King Cross)',
     },
+        {
+      name: 'Київ',
+      date: '21 березня',
+      time: '19:30',
+      place: 'ТЦ Гулівер, кінотеатр Oскар',
+    },
   ];
   return (
     <Section>
