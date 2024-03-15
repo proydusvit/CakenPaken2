@@ -20,6 +20,7 @@ $large-screen: 1239px;
 
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     margin-top: 37px;
+    margin-right: 10px;
   }
   @media (max-width: $small-screen) {
     margin-top: 30px;

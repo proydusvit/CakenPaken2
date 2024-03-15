@@ -3,10 +3,8 @@
 import { useState, useEffect } from 'react';
 import SupportBtn from './SupportBtn/SupportBtn';
 import { Link } from '@/navigation';
-// import { useMediaQuery } from '@react-hook/media-query';
 import Navigation from './Navigation/Navigation';
 import styles from './Header.module.scss';
-// import { usePathname } from 'next/navigation';
 import SocialMedia from './SocialMedia/SocialMedia';
 import ButtonHeader from './BtnHeader/ButtonHeader';
 import Load from '@/components/Loading/Loading';
@@ -21,28 +19,7 @@ const Header = ({
   support,
   donate,
 }) => {
-  // const pathname = usePathname();
   const [isClicked, setIsClicked] = useState(false);
-
-  // const [fill, setFill] = useState('black');
-  // const isMobile = useMediaQuery('(max-width: 767px)');
-  // const [backgroundColor, setBackgroundColor] = useState('black');
-
-  // useEffect(() => {
-  //   const isWhiteBackgroundRoute = [
-  //     '/projects/mountain_instant',
-  //     '/projects/trail',
-  //     '/gallery/mountain_instant',
-  //     '/gallery/trail',
-  //     '/about',
-  //     '/',
-  //   ].includes(pathname);
-
-  //   const newBackgroundColor =
-  //     isWhiteBackgroundRoute && isMobile ? 'black' : 'black';
-
-  //   setBackgroundColor(newBackgroundColor);
-  // }, [pathname, isMobile]);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
@@ -50,7 +27,9 @@ const Header = ({
 
   return (
     <>
-      <header className={styles.header}>
+      <header
+        className={`${styles.header}  ${isClicked ? styles.reletive : ''}`}
+      >
         <div className={styles.container}>
           <ButtonHeader handleClick={handleClick} isClicked={isClicked} />
 
@@ -78,14 +57,18 @@ const Header = ({
           </div>
         </div>
         <div>
-          <Link rel="canonical" href="/" aria-label="Logo">
+          <Link
+            rel="canonical"
+            href="/"
+            aria-label="Logo "
+            onClick={() => setIsClicked(false)}
+          >
             <svg
               className={styles.img}
               width="175"
               height="65"
               viewBox="0 0 2342 875"
               fill="black"
-              // style={{ fill: backgroundColor }}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path

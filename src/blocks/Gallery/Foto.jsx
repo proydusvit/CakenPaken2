@@ -31,7 +31,6 @@ const Foto = ({ image }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.2, delay: 0.2, ease: 'easeOut' }}
-                className={styles.conception}
               >
                 <Image
                   alt="Film"

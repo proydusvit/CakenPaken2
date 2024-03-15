@@ -57,17 +57,28 @@ const Category = ({ home, gallery, film, trail, border }) => {
         >
           <h1 className={styles.title}> {gallery}</h1>
         </motion.div>
-
         <div className={styles.section__link}>
-          <Link rel="canonical" href="gallery/mountain_instant">
+          <Link
+            className={styles.links}
+            rel="canonical"
+            href="gallery/mountain_instant"
+          >
             <span className={styles.name}>{film}</span>
           </Link>
 
-          <Link rel="canonical" href="gallery/trail">
+          <Link
+            className={`${styles.trail} ${styles.links}`}
+            rel="canonical"
+            href="gallery/trail"
+          >
             <span className={styles.name}>{trail}</span>
           </Link>
 
-          <Link rel="canonical" href="gallery/edge_of_war">
+          <Link
+            rel="canonical"
+            href="gallery/edge_of_war"
+            className={`${styles.border} ${styles.links}`}
+          >
             <span className={styles.name}>{border}</span>
           </Link>
         </div>
