@@ -12,7 +12,11 @@ body {
   margin: 0;
   font-display: swap;
 }
-
+@media (max-width: 768px) {
+  body.lock-scroll {
+    overflow: hidden;
+  }
+}
 a {
   color: inherit;
   text-decoration: none;

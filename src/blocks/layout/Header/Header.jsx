@@ -25,6 +25,18 @@ const Header = ({
     setIsClicked(!isClicked);
   };
 
+  const toggleScrollLock = () => {
+    if (isClicked) {
+      document.body.classList.add('lock-scroll');
+    } else {
+      document.body.classList.remove('lock-scroll');
+    }
+  };
+
+  // Викликати toggleScrollLock при зміні isClicked
+  useEffect(() => {
+    toggleScrollLock();
+  }, [isClicked]);
   return (
     <>
       <header
