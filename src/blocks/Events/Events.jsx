@@ -102,7 +102,7 @@ const Table = ({ data, home, events, event }) => {
                 className={styles.img}
                 src={img}
                 alt={alt}
-                width={590}
+                width={480}
                 height={350}
               />
             </motion.div>
@@ -111,7 +111,7 @@ const Table = ({ data, home, events, event }) => {
       </ul>
 
       <div className={styles.box}>
-        <blockquote
+        {/* <blockquote
           class="instagram-media"
           data-instgrm-captioned
           data-instgrm-permalink="https://www.instagram.com/reel/C37hStBtcrL/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -395,7 +395,7 @@ const Table = ({ data, home, events, event }) => {
           </div>
         </blockquote>
 
-        <script async src="//www.instagram.com/embed.js"></script>
+        <script async src="//www.instagram.com/embed.js"></script> */}
 
         <blockquote
           className="instagram-media"

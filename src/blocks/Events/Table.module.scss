@@ -47,6 +47,7 @@ $large-screen: 1239px;
 .box {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 80px;
   @media (min-width: $medium-screen) and (max-width: $large-screen) {
     margin-top: 20px;
     display: flex;
@@ -56,7 +57,7 @@ $large-screen: 1239px;
   @media (max-width: $small-screen) {
     margin-top: 40px;
     text-align: center;
-    display: block;
+    display: flex;
   }
 }
 .table {
@@ -104,7 +105,7 @@ $large-screen: 1239px;
 }
 .list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 30px;
