@@ -65,7 +65,7 @@ const Home = () => {
             alt="Gallery"
           />
         </Link>
-        <Help />
+        {/* <Help /> */}
 
         <Link
           rel="canonical"
