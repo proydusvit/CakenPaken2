@@ -99,13 +99,13 @@ const MerchId = ({ id }) => {
               nunc nunc.
             </p>
 
-            <Link
+            <a
               target="_blank"
               href="https://t.me/cakenpaken"
               className={styles.btn}
             >
               Замовити в телеграм
-            </Link>
+            </a>
           </div>
         </div>
       </div>
