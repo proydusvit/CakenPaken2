@@ -1,5 +1,153 @@
+$small-screen: 767px;
+$medium-screen: 768px;
+$large-screen: 1239px;
+
 .box {
-  height: 600px;
-  background-color: aliceblue;
+  display: flex;
+}
+.content {
+  position: relative;
+  height: 667px;
+  width: 50%;
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    height: 414px;
+  }
+  @media (max-width: $small-screen) {
+    height: 300px;
+  }
+}
+.img {
+  filter: brightness(85%);
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+}
+.order {
+  text-align: center;
+  padding: 20px 35px;
+  border-radius: 25px;
+  left: 25%;
+  top: 17%;
+  position: absolute;
+  background-color: white;
+  height: 350px;
+  width: 300px;
   color: black;
+  z-index: 12;
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    top: 25%;
+    left: 25%;
+    height: 220px;
+    width: 200px;
+    padding: 20px 25px;
+  }
+  @media (max-width: $small-screen) {
+    left: 17%;
+    height: 230px;
+    width: 150px;
+    padding: 20px 7px;
+  }
+}
+.name {
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: -4%;
+  line-height: 42px;
+  margin-bottom: 10px;
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 17px;
+    letter-spacing: -4%;
+    line-height: 19px;
+  }
+
+  @media (max-width: $small-screen) {
+    font-size: 17px;
+    letter-spacing: -4%;
+    line-height: 19px;
+  }
+}
+.price {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: -4%;
+  line-height: 28px;
+  margin-bottom: 10px;
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 11px;
+    letter-spacing: -4%;
+    line-height: 14px;
+    margin-bottom: 15px;
+  }
+  @media (max-width: $small-screen) {
+    font-size: 11px;
+    letter-spacing: -4%;
+    line-height: 14px;
+  }
+}
+.descrip {
+  font-size: 13px;
+  letter-spacing: -4%;
+  line-height: 22px;
+
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 8px;
+    letter-spacing: -4%;
+    line-height: 9px;
+  }
+  @media (max-width: $small-screen) {
+    font-size: 8px;
+    letter-spacing: -4%;
+    line-height: 9px;
+  }
+}
+.btn {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  letter-spacing: -4%;
+  line-height: 32px;
+  top: 10%;
+  background-color: black;
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 10px;
+    letter-spacing: -4%;
+    line-height: 15px;
+    padding: 15px 15px;
+    top: 45px;
+  }
+  @media (max-width: $small-screen) {
+    font-size: 10px;
+    letter-spacing: -4%;
+    line-height: 15px;
+    padding: 10px 15px;
+    top: 45px;
+  }
+}
+.section {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 150px 15px 200px;
+
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    width: 100vw;
+    padding: 130px 0;
+  }
+
+  @media (max-width: $small-screen) {
+    width: 100vw;
+    padding: 140px 0 100px;
+  }
+}
+.bred {
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    padding: 0 100px;
+    margin-bottom: -50px;
+  }
+  @media (max-width: $small-screen) {
+    width: 100vw;
+    padding: 0 22px;
+  }
 }

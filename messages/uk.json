@@ -108,5 +108,12 @@
     "home": "Головна",
     "events": "Події",
     "Event": "Календар показів фільму \"Гірська мить\""
+  },
+
+  "Merch": {
+    "merch": "Мерч",
+    "pin": "Пін",
+    "home": "Головна",
+    "Event": "\"Mountain Instant\" in cinema"
   }
 }

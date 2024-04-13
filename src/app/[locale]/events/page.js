@@ -59,7 +59,7 @@ const Events = () => {
     },
     {
       name: 'Дніпро',
-      date: '18 квітня',
+      date: '1ч8 квітня',
       time: '18:30',
       place: 'Планета Кіно Appolo',
     },
