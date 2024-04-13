@@ -1,0 +1,86 @@
+@import '../../styles//mixin';
+
+$small-screen: 767px;
+$medium-screen: 768px;
+$large-screen: 1239px;
+.name {
+  display: flex;
+  justify-content: center;
+
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+
+  margin-bottom: 45px;
+
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1.12px;
+  }
+  @media (max-width: $small-screen) {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1.44px;
+  }
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: $medium-screen) and (max-width: 1439px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+  @media (max-width: $small-screen) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+  }
+  li {
+    cursor: pointer;
+    margin-bottom: -5px;
+  }
+}
+.teamMember {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+
+  .memberName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 15px 25px;
+
+    color: white;
+
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -1.44px;
+    text-transform: uppercase;
+
+    text-align: flex-start;
+    transition: opacity 0.3s ease;
+
+    @media (min-width: $medium-screen) and (max-width: 1439px) {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.72px;
+
+      padding: 5px 5px;
+      opacity: 1;
+    }
+    @media (max-width: $small-screen) {
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -0.72px;
+
+      padding: 5px 5px;
+      opacity: 1;
+    }
+  }
+}
