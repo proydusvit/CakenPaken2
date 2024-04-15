@@ -92,19 +92,14 @@ const MerchId = ({ id }) => {
           <div className={styles.order}>
             <h1 className={styles.name}>{t(item.name)}</h1>
             <p className={styles.price}>{item.price}</p>
-            <p className={styles.descrip}>
-              Lorem ipsum dolor sit amet consectetur. Sem vitae in etiam
-              vestibulum habitant. Sed egestas urna eget quam lectus vestibulum.
-              Sollicitudin lobortis arcu adipiscing pretium amet libero velit
-              nunc nunc.
-            </p>
+            <p className={styles.descrip}>{t(item.des)}</p>
 
             <a
               target="_blank"
               href="https://t.me/cakenpaken"
               className={styles.btn}
             >
-              Замовити в телеграм
+              {t('tel')}
             </a>
           </div>
         </div>

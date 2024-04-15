@@ -35,17 +35,9 @@ const Home = () => {
             alt="Projects"
           />
         </Link>
-        <div className={styles.content}>
-          <div
-            className={styles.svgbox}
-            // style={{ zIndex: '222', position: 'relative' }}
-          >
-            <span className={styles.texts}> {t('merch')}</span>
+        <Link rel="canonical" href="/merch" className={styles.content}>
+          <span className={styles.texts}>{t('merch')}</span>
 
-            <div className={styles.soon}>
-              {isEnglish ? <Soon /> : <Skoro />}
-            </div>
-          </div>
           <Image
             src={Merch}
             fill
@@ -53,7 +45,7 @@ const Home = () => {
             placeholder="blur"
             alt="Merch"
           />
-        </div>
+        </Link>
 
         <Link rel="canonical" className={styles.projects} href="/gallery">
           <span className={styles.text}>{t('gallery')}</span>

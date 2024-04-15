@@ -5,6 +5,7 @@ export const listMerch = [
     id: 'pin',
     img: pin,
     img2: pin2,
+    des:'des',
     name: 'pin',
     price: '250 UAH',
   },

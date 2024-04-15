@@ -113,7 +113,10 @@
   "Merch": {
     "merch": "Мерч",
     "pin": "Пін",
+    "des": "металевий, 35 × 25 мм \n [кількість обмежена] \n Рекомендовано носити біля серденька.",
+
     "home": "Головна",
-    "Event": "\"Mountain Instant\" in cinema"
+    "Event": "\"Mountain Instant\" in cinema",
+    "tel": " Замовити в телеграм"
   }
 }
