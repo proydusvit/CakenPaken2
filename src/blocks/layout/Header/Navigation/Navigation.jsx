@@ -28,7 +28,16 @@ const Navigation = ({
           </Link>
         </li>
         <li className={styles.item}>
-          <span className={styles.linkDisabled}> {shop}</span>
+          <Link
+            rel="canonical"
+            href="/merch"
+            className={`${styles.link} ${
+              pathname === '/merch' ? styles.active : ''
+            }`}
+            onClick={isClicked}
+          >
+            {shop}
+          </Link>
         </li>
         <li className={styles.item}>
           <Link
