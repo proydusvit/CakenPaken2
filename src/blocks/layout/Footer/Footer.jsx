@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
           <div className={styles.developers}>
             <Link target="_blank" href="https://linktr.ee/WebCreateStudio">
-             WebCreateStudio
+            ⓒ 2024, WebCreateStudio
             </Link>
           
           </div>
