@@ -46,13 +46,10 @@ const Footer = () => {
             </span>
           </div>
           <div className={styles.developers}>
-            <Link target="_blank" href="https://linktr.ee/tsymbrivskaa">
-              {t('design')}
+            <Link target="_blank" href="https://linktr.ee/WebCreateStudio">
+             WebCreateStudio
             </Link>
-            <Link target="_blank" href="https://linktr.ee/proidysvit7">
-              {t('develop')}
-            </Link>
-            <p>2024</p>
+          
           </div>
         </div>
       </div>
