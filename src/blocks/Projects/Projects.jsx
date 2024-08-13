@@ -106,6 +106,18 @@ const Projects = ({ home, projects }) => {
             aria-label="mind"
           ></Link>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: 0.3, ease: 'easeInOut' }}
+        >
+          <Link
+            rel="canonical"
+            className={`${styles.category} ${styles.category_women}`}
+            href="/projects/letters_to_womens_time"
+            aria-label="LettersToWomensTime"
+          ></Link>
+        </motion.div>
       </Section>
     </>
   );
